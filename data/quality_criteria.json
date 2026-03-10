@@ -1,0 +1,1571 @@
+{
+  "version": "1.0",
+  "format_criteria_map": {
+    "1": {
+      "criteria": ["lighting_quality", "background_neutrality", "product_prominence", "brand_clarity", "composition_quality", "color_accuracy"],
+      "weights": {
+        "lighting_quality": 1.2,
+        "background_neutrality": 1.1,
+        "product_prominence": 1.2,
+        "brand_clarity": 1.0,
+        "composition_quality": 1.0,
+        "color_accuracy": 1.0
+      }
+    },
+    "1.1": {
+      "criteria": ["lighting_quality", "background_neutrality", "product_prominence", "composition_quality", "color_accuracy", "cutout_quality"],
+      "weights": {
+        "lighting_quality": 1.2,
+        "background_neutrality": 1.5,
+        "product_prominence": 1.2,
+        "composition_quality": 1.0,
+        "color_accuracy": 1.0,
+        "cutout_quality": 1.3
+      }
+    },
+    "1.2": {
+      "criteria": ["lighting_quality", "background_neutrality", "product_prominence", "composition_quality", "color_accuracy", "color_contrast_effectiveness"],
+      "weights": {
+        "lighting_quality": 1.2,
+        "background_neutrality": 1.0,
+        "product_prominence": 1.2,
+        "composition_quality": 1.0,
+        "color_accuracy": 1.1,
+        "color_contrast_effectiveness": 1.3
+      }
+    },
+    "1.3": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "visual_impact", "directional_lighting_quality"],
+      "weights": {
+        "lighting_quality": 1.3,
+        "product_prominence": 1.3,
+        "composition_quality": 1.1,
+        "color_accuracy": 1.0,
+        "visual_impact": 1.2,
+        "directional_lighting_quality": 1.2
+      }
+    },
+    "1.4": {
+      "criteria": ["lighting_quality", "product_prominence", "color_accuracy", "focus_area_precision", "depth_of_field_quality", "detail_informativeness"],
+      "weights": {
+        "lighting_quality": 1.2,
+        "product_prominence": 1.1,
+        "color_accuracy": 1.0,
+        "focus_area_precision": 1.4,
+        "depth_of_field_quality": 1.3,
+        "detail_informativeness": 1.2
+      }
+    },
+    "1.5": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "scale_reference_clarity"],
+      "weights": {
+        "lighting_quality": 1.1,
+        "product_prominence": 1.2,
+        "composition_quality": 1.1,
+        "color_accuracy": 1.0,
+        "scale_reference_clarity": 1.4
+      }
+    },
+    "1.6": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "environment_product_coherence"],
+      "weights": {
+        "lighting_quality": 1.1,
+        "product_prominence": 1.2,
+        "composition_quality": 1.1,
+        "color_accuracy": 1.0,
+        "environment_product_coherence": 1.3
+      }
+    },
+    "1.7": {
+      "criteria": ["lighting_quality", "background_neutrality", "composition_quality", "color_accuracy", "top_down_angle_precision", "grid_symmetry_alignment", "surface_cleanliness"],
+      "weights": {
+        "lighting_quality": 1.1,
+        "background_neutrality": 1.1,
+        "composition_quality": 1.2,
+        "color_accuracy": 1.0,
+        "top_down_angle_precision": 1.3,
+        "grid_symmetry_alignment": 1.3,
+        "surface_cleanliness": 1.1
+      }
+    },
+    "1.8": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "artistic_staging_quality"],
+      "weights": {
+        "lighting_quality": 1.3,
+        "product_prominence": 1.1,
+        "composition_quality": 1.3,
+        "color_accuracy": 1.0,
+        "artistic_staging_quality": 1.2
+      }
+    },
+    "1.9": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "text_overlay_legibility", "text_visual_integration"],
+      "weights": {
+        "lighting_quality": 1.1,
+        "product_prominence": 1.1,
+        "composition_quality": 1.1,
+        "color_accuracy": 1.0,
+        "text_overlay_legibility": 1.3,
+        "text_visual_integration": 1.2
+      }
+    },
+    "1.10": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "collection_visual_consistency", "individual_product_readability", "grid_balance"],
+      "weights": {
+        "lighting_quality": 1.1,
+        "product_prominence": 1.0,
+        "composition_quality": 1.1,
+        "color_accuracy": 1.0,
+        "collection_visual_consistency": 1.3,
+        "individual_product_readability": 1.3,
+        "grid_balance": 1.2
+      }
+    },
+    "1.11": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "annotation_clarity", "label_legibility", "annotation_non_invasiveness"],
+      "weights": {
+        "lighting_quality": 1.0,
+        "product_prominence": 1.1,
+        "composition_quality": 1.0,
+        "color_accuracy": 1.0,
+        "annotation_clarity": 1.4,
+        "label_legibility": 1.3,
+        "annotation_non_invasiveness": 1.2
+      }
+    },
+    "1.12": {
+      "criteria": ["lighting_quality", "product_prominence", "color_accuracy", "ingredient_visibility", "macro_detail_quality"],
+      "weights": {
+        "lighting_quality": 1.2,
+        "product_prominence": 1.1,
+        "color_accuracy": 1.1,
+        "ingredient_visibility": 1.4,
+        "macro_detail_quality": 1.3
+      }
+    },
+    "1.13": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "angle_coverage_completeness", "cross_angle_consistency"],
+      "weights": {
+        "lighting_quality": 1.1,
+        "product_prominence": 1.2,
+        "composition_quality": 1.0,
+        "color_accuracy": 1.1,
+        "angle_coverage_completeness": 1.3,
+        "cross_angle_consistency": 1.3
+      }
+    },
+    "1.14": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "packaging_presentation_quality", "brand_experience_communication"],
+      "weights": {
+        "lighting_quality": 1.2,
+        "product_prominence": 1.2,
+        "composition_quality": 1.1,
+        "color_accuracy": 1.0,
+        "packaging_presentation_quality": 1.3,
+        "brand_experience_communication": 1.1
+      }
+    },
+    "1.15": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "bundle_coherence", "individual_item_visibility"],
+      "weights": {
+        "lighting_quality": 1.1,
+        "product_prominence": 1.1,
+        "composition_quality": 1.2,
+        "color_accuracy": 1.0,
+        "bundle_coherence": 1.3,
+        "individual_item_visibility": 1.2
+      }
+    },
+    "1.16": {
+      "criteria": ["lighting_quality", "product_prominence", "composition_quality", "color_accuracy", "animation_fluidity", "three_d_rendering_quality"],
+      "weights": {
+        "lighting_quality": 1.0,
+        "product_prominence": 1.2,
+        "composition_quality": 1.1,
+        "color_accuracy": 1.1,
+        "animation_fluidity": 1.3,
+        "three_d_rendering_quality": 1.3
+      }
+    },
+    "2": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "human_presence_quality", "environment_coherence"],
+      "weights": {
+        "scene_authenticity": 1.2,
+        "product_integration": 1.2,
+        "aspirational_quality": 1.1,
+        "human_presence_quality": 1.0,
+        "environment_coherence": 1.0
+      }
+    },
+    "2.1": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "environment_coherence", "location_product_coherence", "figure_ground_balance"],
+      "weights": {
+        "scene_authenticity": 1.2,
+        "product_integration": 1.2,
+        "aspirational_quality": 1.1,
+        "environment_coherence": 1.1,
+        "location_product_coherence": 1.3,
+        "figure_ground_balance": 1.1
+      }
+    },
+    "2.2": {
+      "criteria": ["scene_authenticity", "product_integration", "human_presence_quality", "environment_coherence", "in_use_rendering_quality", "gesture_naturalness"],
+      "weights": {
+        "scene_authenticity": 1.1,
+        "product_integration": 1.3,
+        "human_presence_quality": 1.2,
+        "environment_coherence": 1.0,
+        "in_use_rendering_quality": 1.3,
+        "gesture_naturalness": 1.2
+      }
+    },
+    "2.3": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "human_presence_quality", "environment_coherence", "daily_flow_naturalness"],
+      "weights": {
+        "scene_authenticity": 1.2,
+        "product_integration": 1.2,
+        "aspirational_quality": 1.0,
+        "human_presence_quality": 1.1,
+        "environment_coherence": 1.1,
+        "daily_flow_naturalness": 1.2
+      }
+    },
+    "2.4": {
+      "criteria": ["scene_authenticity", "product_integration", "human_presence_quality", "environment_coherence", "routine_sequentiality", "transformation_perceptibility"],
+      "weights": {
+        "scene_authenticity": 1.1,
+        "product_integration": 1.3,
+        "human_presence_quality": 1.1,
+        "environment_coherence": 1.0,
+        "routine_sequentiality": 1.3,
+        "transformation_perceptibility": 1.2
+      }
+    },
+    "2.5": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "environment_coherence", "routine_sequentiality", "product_lineup_visibility"],
+      "weights": {
+        "scene_authenticity": 1.1,
+        "product_integration": 1.2,
+        "aspirational_quality": 1.1,
+        "environment_coherence": 1.1,
+        "routine_sequentiality": 1.3,
+        "product_lineup_visibility": 1.2
+      }
+    },
+    "2.6": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "human_presence_quality", "outfit_completeness", "styling_coherence"],
+      "weights": {
+        "scene_authenticity": 1.0,
+        "product_integration": 1.1,
+        "aspirational_quality": 1.3,
+        "human_presence_quality": 1.2,
+        "outfit_completeness": 1.3,
+        "styling_coherence": 1.2
+      }
+    },
+    "2.7": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "environment_coherence", "meal_presentation_quality", "food_photography_quality"],
+      "weights": {
+        "scene_authenticity": 1.1,
+        "product_integration": 1.2,
+        "aspirational_quality": 1.0,
+        "environment_coherence": 1.1,
+        "meal_presentation_quality": 1.3,
+        "food_photography_quality": 1.3
+      }
+    },
+    "2.8": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "environment_coherence", "companion_atmosphere", "workspace_aesthetic"],
+      "weights": {
+        "scene_authenticity": 1.2,
+        "product_integration": 1.1,
+        "aspirational_quality": 1.1,
+        "environment_coherence": 1.2,
+        "companion_atmosphere": 1.3,
+        "workspace_aesthetic": 1.1
+      }
+    },
+    "2.9": {
+      "criteria": ["scene_authenticity", "product_integration", "aspirational_quality", "environment_coherence", "clean_aesthetic_consistency", "palette_neutrality"],
+      "weights": {
+        "scene_authenticity": 1.0,
+        "product_integration": 1.1,
+        "aspirational_quality": 1.4,
+        "environment_coherence": 1.2,
+        "clean_aesthetic_consistency": 1.3,
+        "palette_neutrality": 1.1
+      }
+    },
+    "3": {
+      "criteria": ["authenticity_perception", "craft_visibility", "storytelling_clarity", "production_transparency"],
+      "weights": {
+        "authenticity_perception": 1.3,
+        "craft_visibility": 1.2,
+        "storytelling_clarity": 1.1,
+        "production_transparency": 1.0
+      }
+    },
+    "3.1": {
+      "criteria": ["authenticity_perception", "craft_visibility", "storytelling_clarity", "production_transparency", "team_genuineness"],
+      "weights": {
+        "authenticity_perception": 1.4,
+        "craft_visibility": 1.1,
+        "storytelling_clarity": 1.1,
+        "production_transparency": 1.2,
+        "team_genuineness": 1.1
+      }
+    },
+    "3.2": {
+      "criteria": ["authenticity_perception", "craft_visibility", "storytelling_clarity", "production_transparency", "process_sequentiality", "key_step_detail", "hygiene_safety_perception"],
+      "weights": {
+        "authenticity_perception": 1.2,
+        "craft_visibility": 1.3,
+        "storytelling_clarity": 1.1,
+        "production_transparency": 1.1,
+        "process_sequentiality": 1.3,
+        "key_step_detail": 1.2,
+        "hygiene_safety_perception": 1.1
+      }
+    },
+    "3.3": {
+      "criteria": ["authenticity_perception", "craft_visibility", "storytelling_clarity", "production_transparency", "packaging_visual_quality", "satisfying_rhythm", "brand_through_packaging"],
+      "weights": {
+        "authenticity_perception": 1.1,
+        "craft_visibility": 1.1,
+        "storytelling_clarity": 1.0,
+        "production_transparency": 1.1,
+        "packaging_visual_quality": 1.3,
+        "satisfying_rhythm": 1.3,
+        "brand_through_packaging": 1.2
+      }
+    },
+    "3.4": {
+      "criteria": ["authenticity_perception", "storytelling_clarity", "production_transparency", "founder_credibility", "emotional_connection", "minimum_production_quality"],
+      "weights": {
+        "authenticity_perception": 1.3,
+        "storytelling_clarity": 1.2,
+        "production_transparency": 1.0,
+        "founder_credibility": 1.4,
+        "emotional_connection": 1.2,
+        "minimum_production_quality": 1.0
+      }
+    },
+    "3.5": {
+      "criteria": ["authenticity_perception", "craft_visibility", "storytelling_clarity", "production_transparency", "employee_genuineness", "workplace_atmosphere"],
+      "weights": {
+        "authenticity_perception": 1.3,
+        "craft_visibility": 1.0,
+        "storytelling_clarity": 1.1,
+        "production_transparency": 1.2,
+        "employee_genuineness": 1.3,
+        "workplace_atmosphere": 1.1
+      }
+    },
+    "4": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "audio_visual_sync", "review_specificity"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.1,
+        "speaker_credibility": 1.1,
+        "audio_visual_sync": 0.9,
+        "review_specificity": 1.0
+      }
+    },
+    "4.1": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "lo_fi_aesthetic_quality"],
+      "weights": {
+        "authenticity_score": 1.4,
+        "engagement_potential": 1.1,
+        "speaker_credibility": 1.1,
+        "review_specificity": 1.0,
+        "lo_fi_aesthetic_quality": 1.2
+      }
+    },
+    "4.2": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "eye_contact_quality", "facial_expressiveness", "face_framing_quality"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.1,
+        "speaker_credibility": 1.2,
+        "review_specificity": 1.0,
+        "eye_contact_quality": 1.3,
+        "facial_expressiveness": 1.1,
+        "face_framing_quality": 1.1
+      }
+    },
+    "4.3": {
+      "criteria": ["authenticity_score", "engagement_potential", "review_specificity", "reveal_moment_quality", "packaging_showcasing", "reaction_authenticity", "content_completeness"],
+      "weights": {
+        "authenticity_score": 1.2,
+        "engagement_potential": 1.2,
+        "review_specificity": 0.9,
+        "reveal_moment_quality": 1.4,
+        "packaging_showcasing": 1.1,
+        "reaction_authenticity": 1.3,
+        "content_completeness": 1.0
+      }
+    },
+    "4.4": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "multi_product_coverage", "purchase_justification"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.1,
+        "speaker_credibility": 1.1,
+        "review_specificity": 1.1,
+        "multi_product_coverage": 1.2,
+        "purchase_justification": 1.1
+      }
+    },
+    "4.5": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "fit_rendering_quality", "body_movement_naturalness"],
+      "weights": {
+        "authenticity_score": 1.2,
+        "engagement_potential": 1.1,
+        "speaker_credibility": 1.1,
+        "review_specificity": 1.0,
+        "fit_rendering_quality": 1.4,
+        "body_movement_naturalness": 1.2
+      }
+    },
+    "4.6": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "reaction_genuineness", "surprise_element_quality"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.3,
+        "speaker_credibility": 1.0,
+        "reaction_genuineness": 1.4,
+        "surprise_element_quality": 1.1
+      }
+    },
+    "4.7": {
+      "criteria": ["authenticity_score", "engagement_potential", "audio_visual_sync", "texture_detail_quality", "movement_fluidity", "sensory_focus"],
+      "weights": {
+        "authenticity_score": 1.0,
+        "engagement_potential": 1.1,
+        "audio_visual_sync": 1.3,
+        "texture_detail_quality": 1.4,
+        "movement_fluidity": 1.3,
+        "sensory_focus": 1.2
+      }
+    },
+    "4.8": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "blind_test_fairness", "reaction_genuineness"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.2,
+        "speaker_credibility": 1.1,
+        "review_specificity": 1.1,
+        "blind_test_fairness": 1.2,
+        "reaction_genuineness": 1.3
+      }
+    },
+    "4.9": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "criticism_credibility", "pro_con_structure", "non_promotional_tone"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.0,
+        "speaker_credibility": 1.2,
+        "review_specificity": 1.2,
+        "criticism_credibility": 1.4,
+        "pro_con_structure": 1.1,
+        "non_promotional_tone": 1.2
+      }
+    },
+    "4.10": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "ranking_structure_clarity", "tier_justification"],
+      "weights": {
+        "authenticity_score": 1.2,
+        "engagement_potential": 1.3,
+        "speaker_credibility": 1.1,
+        "review_specificity": 1.1,
+        "ranking_structure_clarity": 1.3,
+        "tier_justification": 1.1
+      }
+    },
+    "4.11": {
+      "criteria": ["authenticity_score", "engagement_potential", "review_specificity", "clip_diversity", "montage_pacing", "social_proof_volume"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.2,
+        "review_specificity": 0.9,
+        "clip_diversity": 1.2,
+        "montage_pacing": 1.1,
+        "social_proof_volume": 1.3
+      }
+    },
+    "4.12": {
+      "criteria": ["authenticity_score", "engagement_potential", "speaker_credibility", "review_specificity", "creator_brand_alignment", "native_feed_blending"],
+      "weights": {
+        "authenticity_score": 1.3,
+        "engagement_potential": 1.2,
+        "speaker_credibility": 1.2,
+        "review_specificity": 1.0,
+        "creator_brand_alignment": 1.2,
+        "native_feed_blending": 1.1
+      }
+    },
+    "5": {
+      "criteria": ["credibility_elements", "proof_specificity", "visual_hierarchy", "badge_readability", "testimonial_authenticity"],
+      "weights": {
+        "credibility_elements": 1.3,
+        "proof_specificity": 1.2,
+        "visual_hierarchy": 1.0,
+        "badge_readability": 1.0,
+        "testimonial_authenticity": 1.1
+      }
+    },
+    "5.1": {
+      "criteria": ["credibility_elements", "proof_specificity", "visual_hierarchy", "testimonial_authenticity", "card_layout_hierarchy", "review_length_adequacy", "product_review_connection"],
+      "weights": {
+        "credibility_elements": 1.3,
+        "proof_specificity": 1.2,
+        "visual_hierarchy": 1.2,
+        "testimonial_authenticity": 1.1,
+        "card_layout_hierarchy": 1.2,
+        "review_length_adequacy": 1.0,
+        "product_review_connection": 1.1
+      }
+    },
+    "5.2": {
+      "criteria": ["credibility_elements", "proof_specificity", "testimonial_authenticity", "speaker_presence_quality", "story_specificity"],
+      "weights": {
+        "credibility_elements": 1.3,
+        "proof_specificity": 1.2,
+        "testimonial_authenticity": 1.3,
+        "speaker_presence_quality": 1.2,
+        "story_specificity": 1.1
+      }
+    },
+    "5.3": {
+      "criteria": ["credibility_elements", "proof_specificity", "visual_hierarchy", "testimonial_authenticity", "case_study_structure", "result_quantification"],
+      "weights": {
+        "credibility_elements": 1.2,
+        "proof_specificity": 1.3,
+        "visual_hierarchy": 1.1,
+        "testimonial_authenticity": 1.1,
+        "case_study_structure": 1.3,
+        "result_quantification": 1.2
+      }
+    },
+    "5.4": {
+      "criteria": ["credibility_elements", "proof_specificity", "visual_hierarchy", "badge_readability", "number_visual_impact", "number_credibility", "visual_accompaniment"],
+      "weights": {
+        "credibility_elements": 1.2,
+        "proof_specificity": 1.1,
+        "visual_hierarchy": 1.2,
+        "badge_readability": 1.0,
+        "number_visual_impact": 1.4,
+        "number_credibility": 1.3,
+        "visual_accompaniment": 1.0
+      }
+    },
+    "5.5": {
+      "criteria": ["credibility_elements", "proof_specificity", "visual_hierarchy", "badge_readability", "media_logo_recognizability", "press_source_authority"],
+      "weights": {
+        "credibility_elements": 1.3,
+        "proof_specificity": 1.0,
+        "visual_hierarchy": 1.1,
+        "badge_readability": 1.2,
+        "media_logo_recognizability": 1.4,
+        "press_source_authority": 1.2
+      }
+    },
+    "5.6": {
+      "criteria": ["credibility_elements", "proof_specificity", "testimonial_authenticity", "expert_credentials_visibility", "expert_portrait_professionalism", "claim_specificity"],
+      "weights": {
+        "credibility_elements": 1.3,
+        "proof_specificity": 1.2,
+        "testimonial_authenticity": 1.1,
+        "expert_credentials_visibility": 1.4,
+        "expert_portrait_professionalism": 1.2,
+        "claim_specificity": 1.2
+      }
+    },
+    "5.7": {
+      "criteria": ["credibility_elements", "proof_specificity", "testimonial_authenticity", "influencer_style_alignment", "audience_relevance"],
+      "weights": {
+        "credibility_elements": 1.2,
+        "proof_specificity": 1.1,
+        "testimonial_authenticity": 1.2,
+        "influencer_style_alignment": 1.3,
+        "audience_relevance": 1.2
+      }
+    },
+    "5.8": {
+      "criteria": ["credibility_elements", "visual_hierarchy", "badge_readability", "certification_recognizability", "award_prestige_communication"],
+      "weights": {
+        "credibility_elements": 1.3,
+        "visual_hierarchy": 1.1,
+        "badge_readability": 1.4,
+        "certification_recognizability": 1.3,
+        "award_prestige_communication": 1.1
+      }
+    },
+    "5.9": {
+      "criteria": ["credibility_elements", "proof_specificity", "visual_hierarchy", "testimonial_authenticity", "native_comment_verisimilitude", "feed_blending_quality"],
+      "weights": {
+        "credibility_elements": 1.2,
+        "proof_specificity": 1.1,
+        "visual_hierarchy": 1.0,
+        "testimonial_authenticity": 1.2,
+        "native_comment_verisimilitude": 1.4,
+        "feed_blending_quality": 1.3
+      }
+    },
+    "6": {
+      "criteria": ["problem_clarity", "solution_relevance", "transformation_impact", "emotional_resonance", "narrative_flow"],
+      "weights": {
+        "problem_clarity": 1.2,
+        "solution_relevance": 1.2,
+        "transformation_impact": 1.2,
+        "emotional_resonance": 1.0,
+        "narrative_flow": 1.0
+      }
+    },
+    "6.1": {
+      "criteria": ["problem_clarity", "solution_relevance", "transformation_impact", "emotional_resonance", "narrative_flow", "visual_problem_hook", "pivot_moment_clarity"],
+      "weights": {
+        "problem_clarity": 1.3,
+        "solution_relevance": 1.2,
+        "transformation_impact": 1.1,
+        "emotional_resonance": 1.0,
+        "narrative_flow": 1.1,
+        "visual_problem_hook": 1.3,
+        "pivot_moment_clarity": 1.2
+      }
+    },
+    "6.2": {
+      "criteria": ["problem_clarity", "solution_relevance", "transformation_impact", "emotional_resonance", "narrative_flow", "agitation_effectiveness"],
+      "weights": {
+        "problem_clarity": 1.2,
+        "solution_relevance": 1.2,
+        "transformation_impact": 1.1,
+        "emotional_resonance": 1.2,
+        "narrative_flow": 1.1,
+        "agitation_effectiveness": 1.3
+      }
+    },
+    "6.3": {
+      "criteria": ["problem_clarity", "solution_relevance", "transformation_impact", "narrative_flow", "shooting_condition_consistency", "transformation_visibility", "split_composition_balance", "label_clarity"],
+      "weights": {
+        "problem_clarity": 1.0,
+        "solution_relevance": 1.0,
+        "transformation_impact": 1.3,
+        "narrative_flow": 0.9,
+        "shooting_condition_consistency": 1.4,
+        "transformation_visibility": 1.3,
+        "split_composition_balance": 1.2,
+        "label_clarity": 1.1
+      }
+    },
+    "6.4": {
+      "criteria": ["problem_clarity", "solution_relevance", "emotional_resonance", "narrative_flow", "dramatization_effectiveness", "humor_appropriateness"],
+      "weights": {
+        "problem_clarity": 1.2,
+        "solution_relevance": 1.1,
+        "emotional_resonance": 1.2,
+        "narrative_flow": 1.0,
+        "dramatization_effectiveness": 1.4,
+        "humor_appropriateness": 1.1
+      }
+    },
+    "6.5": {
+      "criteria": ["problem_clarity", "solution_relevance", "transformation_impact", "narrative_flow", "myth_identification_clarity", "debunk_evidence_strength"],
+      "weights": {
+        "problem_clarity": 1.1,
+        "solution_relevance": 1.2,
+        "transformation_impact": 1.0,
+        "narrative_flow": 1.1,
+        "myth_identification_clarity": 1.4,
+        "debunk_evidence_strength": 1.3
+      }
+    },
+    "6.6": {
+      "criteria": ["problem_clarity", "solution_relevance", "emotional_resonance", "narrative_flow", "expectation_reality_contrast", "humor_effectiveness"],
+      "weights": {
+        "problem_clarity": 1.0,
+        "solution_relevance": 1.1,
+        "emotional_resonance": 1.1,
+        "narrative_flow": 1.1,
+        "expectation_reality_contrast": 1.4,
+        "humor_effectiveness": 1.3
+      }
+    },
+    "6.7": {
+      "criteria": ["problem_clarity", "transformation_impact", "emotional_resonance", "narrative_flow", "temporal_contrast_clarity", "growth_credibility"],
+      "weights": {
+        "problem_clarity": 0.9,
+        "transformation_impact": 1.3,
+        "emotional_resonance": 1.2,
+        "narrative_flow": 1.1,
+        "temporal_contrast_clarity": 1.4,
+        "growth_credibility": 1.2
+      }
+    },
+    "6.8": {
+      "criteria": ["problem_clarity", "solution_relevance", "transformation_impact", "narrative_flow", "temporal_progression_clarity", "condition_consistency_over_time", "gradual_progress_visibility"],
+      "weights": {
+        "problem_clarity": 1.0,
+        "solution_relevance": 1.1,
+        "transformation_impact": 1.2,
+        "narrative_flow": 1.0,
+        "temporal_progression_clarity": 1.4,
+        "condition_consistency_over_time": 1.3,
+        "gradual_progress_visibility": 1.2
+      }
+    },
+    "6.9": {
+      "criteria": ["problem_clarity", "solution_relevance", "transformation_impact", "emotional_resonance", "narrative_flow", "competitor_departure_justification"],
+      "weights": {
+        "problem_clarity": 1.1,
+        "solution_relevance": 1.2,
+        "transformation_impact": 1.1,
+        "emotional_resonance": 1.1,
+        "narrative_flow": 1.1,
+        "competitor_departure_justification": 1.4
+      }
+    },
+    "7": {
+      "criteria": ["fairness_perception", "data_clarity", "visual_comparison_balance", "differentiation_strength"],
+      "weights": {
+        "fairness_perception": 1.2,
+        "data_clarity": 1.2,
+        "visual_comparison_balance": 1.1,
+        "differentiation_strength": 1.2
+      }
+    },
+    "7.1": {
+      "criteria": ["fairness_perception", "data_clarity", "visual_comparison_balance", "differentiation_strength", "party_identification_clarity", "space_equity", "legal_compliance"],
+      "weights": {
+        "fairness_perception": 1.2,
+        "data_clarity": 1.1,
+        "visual_comparison_balance": 1.2,
+        "differentiation_strength": 1.2,
+        "party_identification_clarity": 1.3,
+        "space_equity": 1.1,
+        "legal_compliance": 1.1
+      }
+    },
+    "7.2": {
+      "criteria": ["fairness_perception", "data_clarity", "visual_comparison_balance", "differentiation_strength", "old_way_representation_fairness", "innovation_communication"],
+      "weights": {
+        "fairness_perception": 1.2,
+        "data_clarity": 1.1,
+        "visual_comparison_balance": 1.1,
+        "differentiation_strength": 1.3,
+        "old_way_representation_fairness": 1.2,
+        "innovation_communication": 1.2
+      }
+    },
+    "7.3": {
+      "criteria": ["fairness_perception", "data_clarity", "visual_comparison_balance", "differentiation_strength", "demo_simultaneity", "result_tangibility"],
+      "weights": {
+        "fairness_perception": 1.2,
+        "data_clarity": 1.1,
+        "visual_comparison_balance": 1.2,
+        "differentiation_strength": 1.2,
+        "demo_simultaneity": 1.3,
+        "result_tangibility": 1.2
+      }
+    },
+    "7.4": {
+      "criteria": ["fairness_perception", "data_clarity", "differentiation_strength", "differentiator_uniqueness", "implicit_positioning_clarity"],
+      "weights": {
+        "fairness_perception": 1.1,
+        "data_clarity": 1.1,
+        "differentiation_strength": 1.4,
+        "differentiator_uniqueness": 1.3,
+        "implicit_positioning_clarity": 1.2
+      }
+    },
+    "7.5": {
+      "criteria": ["fairness_perception", "data_clarity", "visual_comparison_balance", "differentiation_strength", "table_legibility", "row_count_manageability", "column_highlight_clarity", "indicator_universality"],
+      "weights": {
+        "fairness_perception": 1.1,
+        "data_clarity": 1.3,
+        "visual_comparison_balance": 1.1,
+        "differentiation_strength": 1.1,
+        "table_legibility": 1.4,
+        "row_count_manageability": 1.0,
+        "column_highlight_clarity": 1.2,
+        "indicator_universality": 1.1
+      }
+    },
+    "8": {
+      "criteria": ["information_density", "visual_clarity", "step_logical_flow", "scanability", "actionability"],
+      "weights": {
+        "information_density": 1.1,
+        "visual_clarity": 1.2,
+        "step_logical_flow": 1.2,
+        "scanability": 1.1,
+        "actionability": 1.0
+      }
+    },
+    "8.1": {
+      "criteria": ["information_density", "visual_clarity", "step_logical_flow", "scanability", "actionability", "step_completeness", "action_visibility_per_step", "result_demonstration"],
+      "weights": {
+        "information_density": 1.0,
+        "visual_clarity": 1.1,
+        "step_logical_flow": 1.3,
+        "scanability": 1.0,
+        "actionability": 1.2,
+        "step_completeness": 1.3,
+        "action_visibility_per_step": 1.2,
+        "result_demonstration": 1.1
+      }
+    },
+    "8.2": {
+      "criteria": ["information_density", "visual_clarity", "step_logical_flow", "scanability", "actionability", "frame_progression_clarity"],
+      "weights": {
+        "information_density": 1.1,
+        "visual_clarity": 1.2,
+        "step_logical_flow": 1.3,
+        "scanability": 1.1,
+        "actionability": 1.1,
+        "frame_progression_clarity": 1.3
+      }
+    },
+    "8.3": {
+      "criteria": ["information_density", "visual_clarity", "step_logical_flow", "scanability", "concept_simplification_quality", "animation_explanation_sync"],
+      "weights": {
+        "information_density": 1.1,
+        "visual_clarity": 1.2,
+        "step_logical_flow": 1.2,
+        "scanability": 1.0,
+        "concept_simplification_quality": 1.4,
+        "animation_explanation_sync": 1.2
+      }
+    },
+    "8.4": {
+      "criteria": ["information_density", "visual_clarity", "scanability", "actionability", "list_structure_clarity", "benefit_specificity"],
+      "weights": {
+        "information_density": 1.1,
+        "visual_clarity": 1.1,
+        "scanability": 1.3,
+        "actionability": 1.1,
+        "list_structure_clarity": 1.3,
+        "benefit_specificity": 1.2
+      }
+    },
+    "8.5": {
+      "criteria": ["information_density", "visual_clarity", "scanability", "actionability", "feature_highlight_precision", "spec_readability"],
+      "weights": {
+        "information_density": 1.2,
+        "visual_clarity": 1.1,
+        "scanability": 1.1,
+        "actionability": 1.0,
+        "feature_highlight_precision": 1.3,
+        "spec_readability": 1.3
+      }
+    },
+    "8.6": {
+      "criteria": ["information_density", "visual_clarity", "scanability", "visual_hierarchy_depth", "graphic_consistency", "data_visualization_accuracy", "mobile_legibility"],
+      "weights": {
+        "information_density": 1.2,
+        "visual_clarity": 1.2,
+        "scanability": 1.1,
+        "visual_hierarchy_depth": 1.2,
+        "graphic_consistency": 1.1,
+        "data_visualization_accuracy": 1.3,
+        "mobile_legibility": 1.2
+      }
+    },
+    "8.7": {
+      "criteria": ["information_density", "visual_clarity", "scanability", "stat_visual_impact", "data_source_credibility"],
+      "weights": {
+        "information_density": 1.0,
+        "visual_clarity": 1.2,
+        "scanability": 1.1,
+        "stat_visual_impact": 1.5,
+        "data_source_credibility": 1.3
+      }
+    },
+    "8.8": {
+      "criteria": ["information_density", "visual_clarity", "scanability", "actionability", "question_answer_clarity", "objection_resolution_effectiveness"],
+      "weights": {
+        "information_density": 1.1,
+        "visual_clarity": 1.1,
+        "scanability": 1.2,
+        "actionability": 1.1,
+        "question_answer_clarity": 1.3,
+        "objection_resolution_effectiveness": 1.3
+      }
+    },
+    "8.9": {
+      "criteria": ["information_density", "visual_clarity", "scanability", "actionability", "tip_immediate_utility", "non_obviousness", "product_role_in_tip"],
+      "weights": {
+        "information_density": 1.0,
+        "visual_clarity": 1.1,
+        "scanability": 1.1,
+        "actionability": 1.2,
+        "tip_immediate_utility": 1.4,
+        "non_obviousness": 1.2,
+        "product_role_in_tip": 1.1
+      }
+    },
+    "8.10": {
+      "criteria": ["information_density", "visual_clarity", "step_logical_flow", "scanability", "grid_layout_balance", "product_as_answer_integration"],
+      "weights": {
+        "information_density": 1.1,
+        "visual_clarity": 1.2,
+        "step_logical_flow": 1.0,
+        "scanability": 1.2,
+        "grid_layout_balance": 1.3,
+        "product_as_answer_integration": 1.2
+      }
+    },
+    "9": {
+      "criteria": ["emotional_impact", "narrative_coherence", "character_relatability", "brand_integration", "authenticity"],
+      "weights": {
+        "emotional_impact": 1.3,
+        "narrative_coherence": 1.2,
+        "character_relatability": 1.0,
+        "brand_integration": 1.1,
+        "authenticity": 1.0
+      }
+    },
+    "9.1": {
+      "criteria": ["emotional_impact", "narrative_coherence", "brand_integration", "authenticity", "origin_story_compellingness", "mission_clarity"],
+      "weights": {
+        "emotional_impact": 1.2,
+        "narrative_coherence": 1.2,
+        "brand_integration": 1.3,
+        "authenticity": 1.1,
+        "origin_story_compellingness": 1.3,
+        "mission_clarity": 1.1
+      }
+    },
+    "9.2": {
+      "criteria": ["emotional_impact", "narrative_coherence", "character_relatability", "brand_integration", "authenticity", "journey_completeness"],
+      "weights": {
+        "emotional_impact": 1.2,
+        "narrative_coherence": 1.2,
+        "character_relatability": 1.3,
+        "brand_integration": 1.1,
+        "authenticity": 1.1,
+        "journey_completeness": 1.2
+      }
+    },
+    "9.3": {
+      "criteria": ["emotional_impact", "narrative_coherence", "brand_integration", "authenticity", "target_emotion_identification", "visual_emotional_coherence", "emotional_element_consistency"],
+      "weights": {
+        "emotional_impact": 1.5,
+        "narrative_coherence": 1.0,
+        "brand_integration": 1.0,
+        "authenticity": 1.1,
+        "target_emotion_identification": 1.3,
+        "visual_emotional_coherence": 1.2,
+        "emotional_element_consistency": 1.1
+      }
+    },
+    "9.4": {
+      "criteria": ["emotional_impact", "narrative_coherence", "character_relatability", "brand_integration", "aspirational_quality", "lifestyle_desirability"],
+      "weights": {
+        "emotional_impact": 1.2,
+        "narrative_coherence": 1.0,
+        "character_relatability": 1.1,
+        "brand_integration": 1.1,
+        "aspirational_quality": 1.4,
+        "lifestyle_desirability": 1.3
+      }
+    },
+    "9.5": {
+      "criteria": ["emotional_impact", "narrative_coherence", "brand_integration", "authenticity", "episode_arc_structure", "cross_episode_continuity"],
+      "weights": {
+        "emotional_impact": 1.1,
+        "narrative_coherence": 1.4,
+        "brand_integration": 1.1,
+        "authenticity": 1.0,
+        "episode_arc_structure": 1.3,
+        "cross_episode_continuity": 1.2
+      }
+    },
+    "9.6": {
+      "criteria": ["emotional_impact", "narrative_coherence", "character_relatability", "brand_integration", "authenticity", "daily_routine_naturalness"],
+      "weights": {
+        "emotional_impact": 1.1,
+        "narrative_coherence": 1.2,
+        "character_relatability": 1.3,
+        "brand_integration": 1.1,
+        "authenticity": 1.2,
+        "daily_routine_naturalness": 1.2
+      }
+    },
+    "9.7": {
+      "criteria": ["emotional_impact", "narrative_coherence", "brand_integration", "punchline_timing", "humor_comprehensibility", "non_offensiveness", "product_comedy_connection"],
+      "weights": {
+        "emotional_impact": 1.2,
+        "narrative_coherence": 1.0,
+        "brand_integration": 1.1,
+        "punchline_timing": 1.4,
+        "humor_comprehensibility": 1.3,
+        "non_offensiveness": 1.1,
+        "product_comedy_connection": 1.2
+      }
+    },
+    "9.8": {
+      "criteria": ["emotional_impact", "narrative_coherence", "character_relatability", "brand_integration", "authenticity", "anecdote_engagement"],
+      "weights": {
+        "emotional_impact": 1.2,
+        "narrative_coherence": 1.2,
+        "character_relatability": 1.3,
+        "brand_integration": 1.0,
+        "authenticity": 1.3,
+        "anecdote_engagement": 1.2
+      }
+    },
+    "9.9": {
+      "criteria": ["emotional_impact", "narrative_coherence", "brand_integration", "authenticity", "cinematographic_quality", "subject_authenticity", "narrative_arc_completeness", "voiceover_image_balance"],
+      "weights": {
+        "emotional_impact": 1.2,
+        "narrative_coherence": 1.2,
+        "brand_integration": 1.0,
+        "authenticity": 1.1,
+        "cinematographic_quality": 1.3,
+        "subject_authenticity": 1.2,
+        "narrative_arc_completeness": 1.1,
+        "voiceover_image_balance": 1.0
+      }
+    },
+    "10": {
+      "criteria": ["offer_clarity", "urgency_perception", "value_communication", "cta_strength", "visual_hierarchy"],
+      "weights": {
+        "offer_clarity": 1.3,
+        "urgency_perception": 1.1,
+        "value_communication": 1.1,
+        "cta_strength": 1.2,
+        "visual_hierarchy": 1.0
+      }
+    },
+    "10.1": {
+      "criteria": ["offer_clarity", "urgency_perception", "value_communication", "cta_strength", "visual_hierarchy", "discount_number_legibility", "coupon_code_visibility"],
+      "weights": {
+        "offer_clarity": 1.3,
+        "urgency_perception": 1.1,
+        "value_communication": 1.2,
+        "cta_strength": 1.2,
+        "visual_hierarchy": 1.2,
+        "discount_number_legibility": 1.3,
+        "coupon_code_visibility": 1.1
+      }
+    },
+    "10.2": {
+      "criteria": ["offer_clarity", "value_communication", "cta_strength", "visual_hierarchy", "promise_credibility", "guarantee_clarity"],
+      "weights": {
+        "offer_clarity": 1.2,
+        "value_communication": 1.2,
+        "cta_strength": 1.2,
+        "visual_hierarchy": 1.0,
+        "promise_credibility": 1.4,
+        "guarantee_clarity": 1.2
+      }
+    },
+    "10.3": {
+      "criteria": ["offer_clarity", "urgency_perception", "cta_strength", "visual_hierarchy", "timer_visibility", "deadline_credibility", "countdown_contrast"],
+      "weights": {
+        "offer_clarity": 1.1,
+        "urgency_perception": 1.4,
+        "cta_strength": 1.2,
+        "visual_hierarchy": 1.0,
+        "timer_visibility": 1.4,
+        "deadline_credibility": 1.2,
+        "countdown_contrast": 1.1
+      }
+    },
+    "10.4": {
+      "criteria": ["offer_clarity", "urgency_perception", "value_communication", "cta_strength", "visual_hierarchy", "scarcity_credibility", "exclusivity_communication"],
+      "weights": {
+        "offer_clarity": 1.2,
+        "urgency_perception": 1.3,
+        "value_communication": 1.1,
+        "cta_strength": 1.1,
+        "visual_hierarchy": 1.0,
+        "scarcity_credibility": 1.4,
+        "exclusivity_communication": 1.1
+      }
+    },
+    "10.5": {
+      "criteria": ["offer_clarity", "value_communication", "cta_strength", "visual_hierarchy", "barrier_removal_clarity", "bonus_value_perception"],
+      "weights": {
+        "offer_clarity": 1.2,
+        "value_communication": 1.3,
+        "cta_strength": 1.2,
+        "visual_hierarchy": 1.0,
+        "barrier_removal_clarity": 1.4,
+        "bonus_value_perception": 1.1
+      }
+    },
+    "10.6": {
+      "criteria": ["offer_clarity", "urgency_perception", "value_communication", "cta_strength", "visual_hierarchy", "seasonal_theme_coherence", "festive_visual_quality"],
+      "weights": {
+        "offer_clarity": 1.2,
+        "urgency_perception": 1.1,
+        "value_communication": 1.1,
+        "cta_strength": 1.1,
+        "visual_hierarchy": 1.0,
+        "seasonal_theme_coherence": 1.3,
+        "festive_visual_quality": 1.2
+      }
+    },
+    "10.7": {
+      "criteria": ["offer_clarity", "value_communication", "cta_strength", "visual_hierarchy", "novelty_communication", "launch_excitement"],
+      "weights": {
+        "offer_clarity": 1.1,
+        "value_communication": 1.1,
+        "cta_strength": 1.2,
+        "visual_hierarchy": 1.1,
+        "novelty_communication": 1.4,
+        "launch_excitement": 1.3
+      }
+    },
+    "10.8": {
+      "criteria": ["offer_clarity", "value_communication", "cta_strength", "visual_hierarchy", "original_price_strikethrough_clarity", "discounted_price_prominence", "price_math_consistency"],
+      "weights": {
+        "offer_clarity": 1.2,
+        "value_communication": 1.2,
+        "cta_strength": 1.1,
+        "visual_hierarchy": 1.1,
+        "original_price_strikethrough_clarity": 1.3,
+        "discounted_price_prominence": 1.4,
+        "price_math_consistency": 1.2
+      }
+    },
+    "10.9": {
+      "criteria": ["offer_clarity", "value_communication", "cta_strength", "visual_hierarchy", "bundle_composition_clarity", "savings_communication"],
+      "weights": {
+        "offer_clarity": 1.2,
+        "value_communication": 1.3,
+        "cta_strength": 1.1,
+        "visual_hierarchy": 1.0,
+        "bundle_composition_clarity": 1.3,
+        "savings_communication": 1.2
+      }
+    },
+    "11": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength"],
+      "weights": {
+        "platform_nativeness": 1.3,
+        "trend_relevance_score": 1.2,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.2
+      }
+    },
+    "11.1": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "framing_quality", "presence_intensity", "background_coherence"],
+      "weights": {
+        "platform_nativeness": 1.2,
+        "trend_relevance_score": 1.0,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.3,
+        "framing_quality": 1.2,
+        "presence_intensity": 1.3,
+        "background_coherence": 1.0
+      }
+    },
+    "11.2": {
+      "criteria": ["platform_nativeness", "production_quality_intentionality", "hook_strength", "intentional_imperfection", "message_clarity_despite_lofi", "brand_spirit_coherence"],
+      "weights": {
+        "platform_nativeness": 1.3,
+        "production_quality_intentionality": 1.3,
+        "hook_strength": 1.2,
+        "intentional_imperfection": 1.4,
+        "message_clarity_despite_lofi": 1.2,
+        "brand_spirit_coherence": 1.1
+      }
+    },
+    "11.3": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "pov_immersion_quality", "first_person_perspective_consistency"],
+      "weights": {
+        "platform_nativeness": 1.2,
+        "trend_relevance_score": 1.1,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.2,
+        "pov_immersion_quality": 1.4,
+        "first_person_perspective_consistency": 1.2
+      }
+    },
+    "11.4": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "trend_timeliness", "brand_trend_adaptation"],
+      "weights": {
+        "platform_nativeness": 1.2,
+        "trend_relevance_score": 1.5,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.1,
+        "trend_timeliness": 1.3,
+        "brand_trend_adaptation": 1.2
+      }
+    },
+    "11.5": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "hook_strength", "template_recognizability", "meme_adaptation_pertinence", "cultural_freshness", "meme_graphic_quality"],
+      "weights": {
+        "platform_nativeness": 1.2,
+        "trend_relevance_score": 1.2,
+        "hook_strength": 1.1,
+        "template_recognizability": 1.4,
+        "meme_adaptation_pertinence": 1.3,
+        "cultural_freshness": 1.2,
+        "meme_graphic_quality": 1.0
+      }
+    },
+    "11.6": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "challenge_replicability", "ugc_generation_potential"],
+      "weights": {
+        "platform_nativeness": 1.2,
+        "trend_relevance_score": 1.2,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.2,
+        "challenge_replicability": 1.4,
+        "ugc_generation_potential": 1.3
+      }
+    },
+    "11.7": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "duet_complementarity", "side_by_side_coherence"],
+      "weights": {
+        "platform_nativeness": 1.3,
+        "trend_relevance_score": 1.1,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.1,
+        "duet_complementarity": 1.4,
+        "side_by_side_coherence": 1.2
+      }
+    },
+    "11.8": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "stitch_transition_quality", "original_clip_relevance"],
+      "weights": {
+        "platform_nativeness": 1.3,
+        "trend_relevance_score": 1.1,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.2,
+        "stitch_transition_quality": 1.3,
+        "original_clip_relevance": 1.2
+      }
+    },
+    "11.9": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "comment_authenticity", "response_relevance"],
+      "weights": {
+        "platform_nativeness": 1.3,
+        "trend_relevance_score": 1.0,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.2,
+        "comment_authenticity": 1.4,
+        "response_relevance": 1.2
+      }
+    },
+    "11.10": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "green_screen_content_relevance", "background_readability"],
+      "weights": {
+        "platform_nativeness": 1.3,
+        "trend_relevance_score": 1.0,
+        "production_quality_intentionality": 1.0,
+        "hook_strength": 1.2,
+        "green_screen_content_relevance": 1.4,
+        "background_readability": 1.2
+      }
+    },
+    "11.11": {
+      "criteria": ["platform_nativeness", "hook_strength", "screenshot_verisimilitude", "simulated_content_credibility", "non_deceptiveness"],
+      "weights": {
+        "platform_nativeness": 1.3,
+        "hook_strength": 1.2,
+        "screenshot_verisimilitude": 1.5,
+        "simulated_content_credibility": 1.2,
+        "non_deceptiveness": 1.2
+      }
+    },
+    "11.12": {
+      "criteria": ["platform_nativeness", "trend_relevance_score", "production_quality_intentionality", "hook_strength", "interviewee_diversity", "response_spontaneity"],
+      "weights": {
+        "platform_nativeness": 1.2,
+        "trend_relevance_score": 1.0,
+        "production_quality_intentionality": 1.1,
+        "hook_strength": 1.2,
+        "interviewee_diversity": 1.2,
+        "response_spontaneity": 1.3
+      }
+    },
+    "12": {
+      "criteria": ["typographic_quality", "color_harmony", "visual_impact", "brand_consistency", "stop_scroll_potential"],
+      "weights": {
+        "typographic_quality": 1.1,
+        "color_harmony": 1.1,
+        "visual_impact": 1.2,
+        "brand_consistency": 1.1,
+        "stop_scroll_potential": 1.2
+      }
+    },
+    "12.1": {
+      "criteria": ["typographic_quality", "visual_impact", "brand_consistency", "stop_scroll_potential", "font_weight_dominance", "text_background_contrast", "message_impact", "typesetting_quality"],
+      "weights": {
+        "typographic_quality": 1.2,
+        "visual_impact": 1.2,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.2,
+        "font_weight_dominance": 1.3,
+        "text_background_contrast": 1.3,
+        "message_impact": 1.2,
+        "typesetting_quality": 1.1
+      }
+    },
+    "12.2": {
+      "criteria": ["typographic_quality", "color_harmony", "visual_impact", "brand_consistency", "quote_attribution_clarity", "quote_visual_treatment"],
+      "weights": {
+        "typographic_quality": 1.2,
+        "color_harmony": 1.1,
+        "visual_impact": 1.1,
+        "brand_consistency": 1.1,
+        "quote_attribution_clarity": 1.3,
+        "quote_visual_treatment": 1.2
+      }
+    },
+    "12.3": {
+      "criteria": ["typographic_quality", "color_harmony", "visual_impact", "brand_consistency", "whitespace_usage", "element_essentialism"],
+      "weights": {
+        "typographic_quality": 1.1,
+        "color_harmony": 1.2,
+        "visual_impact": 1.1,
+        "brand_consistency": 1.2,
+        "whitespace_usage": 1.4,
+        "element_essentialism": 1.2
+      }
+    },
+    "12.4": {
+      "criteria": ["color_harmony", "visual_impact", "brand_consistency", "stop_scroll_potential", "color_saturation_vibrancy", "block_contrast", "compositional_balance", "text_on_block_legibility"],
+      "weights": {
+        "color_harmony": 1.2,
+        "visual_impact": 1.2,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.2,
+        "color_saturation_vibrancy": 1.3,
+        "block_contrast": 1.2,
+        "compositional_balance": 1.1,
+        "text_on_block_legibility": 1.1
+      }
+    },
+    "12.5": {
+      "criteria": ["typographic_quality", "color_harmony", "visual_impact", "brand_consistency", "collage_compositional_harmony", "element_variety_balance"],
+      "weights": {
+        "typographic_quality": 1.0,
+        "color_harmony": 1.2,
+        "visual_impact": 1.2,
+        "brand_consistency": 1.1,
+        "collage_compositional_harmony": 1.3,
+        "element_variety_balance": 1.2
+      }
+    },
+    "12.6": {
+      "criteria": ["color_harmony", "visual_impact", "brand_consistency", "mood_communication_effectiveness", "texture_palette_coherence"],
+      "weights": {
+        "color_harmony": 1.3,
+        "visual_impact": 1.1,
+        "brand_consistency": 1.2,
+        "mood_communication_effectiveness": 1.4,
+        "texture_palette_coherence": 1.2
+      }
+    },
+    "12.7": {
+      "criteria": ["visual_impact", "brand_consistency", "stop_scroll_potential", "movement_fluidity", "scene_frame_consistency", "individual_frame_quality", "movement_narrative"],
+      "weights": {
+        "visual_impact": 1.1,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.2,
+        "movement_fluidity": 1.4,
+        "scene_frame_consistency": 1.2,
+        "individual_frame_quality": 1.1,
+        "movement_narrative": 1.2
+      }
+    },
+    "12.8": {
+      "criteria": ["color_harmony", "visual_impact", "brand_consistency", "stop_scroll_potential", "motion_subtlety", "loop_seamlessness"],
+      "weights": {
+        "color_harmony": 1.1,
+        "visual_impact": 1.2,
+        "brand_consistency": 1.1,
+        "stop_scroll_potential": 1.2,
+        "motion_subtlety": 1.3,
+        "loop_seamlessness": 1.3
+      }
+    },
+    "12.9": {
+      "criteria": ["typographic_quality", "color_harmony", "visual_impact", "brand_consistency", "animation_quality", "audio_video_sync", "animated_text_readability", "animation_style_consistency"],
+      "weights": {
+        "typographic_quality": 1.0,
+        "color_harmony": 1.0,
+        "visual_impact": 1.1,
+        "brand_consistency": 1.0,
+        "animation_quality": 1.4,
+        "audio_video_sync": 1.2,
+        "animated_text_readability": 1.2,
+        "animation_style_consistency": 1.2
+      }
+    },
+    "12.10": {
+      "criteria": ["visual_impact", "brand_consistency", "stop_scroll_potential", "loop_rhythm_quality", "visual_hypnotic_effect"],
+      "weights": {
+        "visual_impact": 1.2,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.3,
+        "loop_rhythm_quality": 1.4,
+        "visual_hypnotic_effect": 1.3
+      }
+    },
+    "12.11": {
+      "criteria": ["typographic_quality", "visual_impact", "brand_consistency", "stop_scroll_potential", "text_entry_timing", "readability_during_motion", "animation_style_unity"],
+      "weights": {
+        "typographic_quality": 1.2,
+        "visual_impact": 1.1,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.1,
+        "text_entry_timing": 1.4,
+        "readability_during_motion": 1.3,
+        "animation_style_unity": 1.1
+      }
+    },
+    "12.12": {
+      "criteria": ["visual_impact", "brand_consistency", "stop_scroll_potential", "time_compression_effectiveness", "process_comprehensibility"],
+      "weights": {
+        "visual_impact": 1.2,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.2,
+        "time_compression_effectiveness": 1.4,
+        "process_comprehensibility": 1.3
+      }
+    },
+    "12.13": {
+      "criteria": ["visual_impact", "brand_consistency", "stop_scroll_potential", "transition_creativity", "transition_smoothness", "reveal_impact"],
+      "weights": {
+        "visual_impact": 1.2,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.3,
+        "transition_creativity": 1.4,
+        "transition_smoothness": 1.2,
+        "reveal_impact": 1.2
+      }
+    },
+    "12.14": {
+      "criteria": ["visual_impact", "brand_consistency", "stop_scroll_potential", "clip_pacing", "clip_variety", "energy_consistency"],
+      "weights": {
+        "visual_impact": 1.2,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.2,
+        "clip_pacing": 1.3,
+        "clip_variety": 1.2,
+        "energy_consistency": 1.1
+      }
+    },
+    "12.15": {
+      "criteria": ["visual_impact", "brand_consistency", "stop_scroll_potential", "satisfying_rhythm", "texture_visual_quality", "repetitive_motion_appeal"],
+      "weights": {
+        "visual_impact": 1.1,
+        "brand_consistency": 0.9,
+        "stop_scroll_potential": 1.3,
+        "satisfying_rhythm": 1.5,
+        "texture_visual_quality": 1.3,
+        "repetitive_motion_appeal": 1.2
+      }
+    },
+    "12.16": {
+      "criteria": ["typographic_quality", "visual_impact", "brand_consistency", "stop_scroll_potential", "handwritten_authenticity", "message_legibility"],
+      "weights": {
+        "typographic_quality": 1.0,
+        "visual_impact": 1.1,
+        "brand_consistency": 1.0,
+        "stop_scroll_potential": 1.2,
+        "handwritten_authenticity": 1.4,
+        "message_legibility": 1.3
+      }
+    },
+    "12.17": {
+      "criteria": ["typographic_quality", "color_harmony", "visual_impact", "brand_consistency", "data_visualization_accuracy", "vertical_format_optimization", "save_worthiness"],
+      "weights": {
+        "typographic_quality": 1.0,
+        "color_harmony": 1.1,
+        "visual_impact": 1.1,
+        "brand_consistency": 1.0,
+        "data_visualization_accuracy": 1.3,
+        "vertical_format_optimization": 1.3,
+        "save_worthiness": 1.2
+      }
+    },
+    "13": {
+      "criteria": ["ui_clarity", "interaction_intuitiveness", "experience_depth", "technical_execution"],
+      "weights": {
+        "ui_clarity": 1.3,
+        "interaction_intuitiveness": 1.2,
+        "experience_depth": 1.1,
+        "technical_execution": 1.1
+      }
+    },
+    "13.1": {
+      "criteria": ["ui_clarity", "interaction_intuitiveness", "experience_depth", "technical_execution", "question_clarity", "option_pertinence", "product_relevance", "option_visual_design"],
+      "weights": {
+        "ui_clarity": 1.2,
+        "interaction_intuitiveness": 1.2,
+        "experience_depth": 1.0,
+        "technical_execution": 1.0,
+        "question_clarity": 1.4,
+        "option_pertinence": 1.2,
+        "product_relevance": 1.1,
+        "option_visual_design": 1.1
+      }
+    },
+    "13.2": {
+      "criteria": ["ui_clarity", "interaction_intuitiveness", "experience_depth", "technical_execution", "ar_overlay_realism", "tracking_precision", "product_rendering_fidelity", "post_tryon_cta_clarity"],
+      "weights": {
+        "ui_clarity": 1.1,
+        "interaction_intuitiveness": 1.2,
+        "experience_depth": 1.1,
+        "technical_execution": 1.3,
+        "ar_overlay_realism": 1.4,
+        "tracking_precision": 1.3,
+        "product_rendering_fidelity": 1.2,
+        "post_tryon_cta_clarity": 1.1
+      }
+    },
+    "13.3": {
+      "criteria": ["ui_clarity", "interaction_intuitiveness", "experience_depth", "technical_execution", "product_clickability", "purchase_flow_seamlessness"],
+      "weights": {
+        "ui_clarity": 1.2,
+        "interaction_intuitiveness": 1.3,
+        "experience_depth": 1.1,
+        "technical_execution": 1.2,
+        "product_clickability": 1.4,
+        "purchase_flow_seamlessness": 1.2
+      }
+    },
+    "13.4": {
+      "criteria": ["ui_clarity", "interaction_intuitiveness", "experience_depth", "technical_execution", "minigame_visual_quality", "mechanics_product_connection", "rule_clarity", "post_gameplay_cta"],
+      "weights": {
+        "ui_clarity": 1.1,
+        "interaction_intuitiveness": 1.3,
+        "experience_depth": 1.2,
+        "technical_execution": 1.2,
+        "minigame_visual_quality": 1.2,
+        "mechanics_product_connection": 1.3,
+        "rule_clarity": 1.2,
+        "post_gameplay_cta": 1.1
+      }
+    },
+    "13.5": {
+      "criteria": ["ui_clarity", "interaction_intuitiveness", "experience_depth", "technical_execution", "panoramic_navigation_smoothness", "visual_fidelity_360"],
+      "weights": {
+        "ui_clarity": 1.2,
+        "interaction_intuitiveness": 1.2,
+        "experience_depth": 1.2,
+        "technical_execution": 1.3,
+        "panoramic_navigation_smoothness": 1.3,
+        "visual_fidelity_360": 1.2
+      }
+    },
+    "13.6": {
+      "criteria": ["ui_clarity", "interaction_intuitiveness", "experience_depth", "technical_execution", "gamification_engagement", "reward_mechanism_clarity"],
+      "weights": {
+        "ui_clarity": 1.2,
+        "interaction_intuitiveness": 1.2,
+        "experience_depth": 1.3,
+        "technical_execution": 1.1,
+        "gamification_engagement": 1.4,
+        "reward_mechanism_clarity": 1.2
+      }
+    }
+  }
+}

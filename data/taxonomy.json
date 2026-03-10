@@ -1,0 +1,993 @@
+{
+  "version": "1.0",
+  "total_formats": 128,
+  "macro_categories": [
+    {
+      "id": 1,
+      "name": "Product-Centric",
+      "format_count": 16,
+      "formats": [
+        {
+          "id": "1.1",
+          "name": "Product Only / White Background",
+          "description": "Product isolated on white or neutral background. Clean, minimal, distraction-free.",
+          "visual_signals": ["white or neutral background", "single product centered in frame", "clean/minimal composition", "professional studio lighting", "no people or lifestyle elements present", "sharp product focus with high detail"],
+          "negative_signals": ["people or models visible", "colored or patterned background", "lifestyle context or environment", "outdoor or natural setting"]
+        },
+        {
+          "id": "1.2",
+          "name": "Product on Colored Background",
+          "description": "Product on vivid colored background to stand out in feed.",
+          "visual_signals": ["vivid or saturated solid color background", "single product as focal point", "high contrast between product and background", "studio-style lighting", "no lifestyle context"],
+          "negative_signals": ["white or neutral background", "people or models", "natural environment or scene", "patterned or textured background"]
+        },
+        {
+          "id": "1.3",
+          "name": "Hero Shot",
+          "description": "High-quality product image with curated lighting, slight suggestive context.",
+          "visual_signals": ["dramatic or curated lighting on product", "high production value", "slight contextual props or atmosphere", "product as dominant visual element", "cinematic or editorial feel"],
+          "negative_signals": ["plain white background with no context", "lo-fi or amateur production", "people as main subject", "heavy text overlays dominating image"]
+        },
+        {
+          "id": "1.4",
+          "name": "Detail Shot / Close-Up",
+          "description": "Zoom on texture, materials, finishes, stitching, ingredients.",
+          "visual_signals": ["extreme close-up or macro perspective", "visible texture, material, or fine detail", "shallow depth of field", "stitching, grain, or surface finish visible", "partial product view filling frame"],
+          "negative_signals": ["full product visible in frame", "wide-angle or environmental shot", "people as main subject", "text-heavy layout"]
+        },
+        {
+          "id": "1.5",
+          "name": "Scale Shot",
+          "description": "Product next to common objects (hands, people) to communicate real dimensions.",
+          "visual_signals": ["product placed next to hand, coin, or everyday object", "human hand holding or touching product", "clear size reference object present", "intentional size comparison composition"],
+          "negative_signals": ["product isolated without reference objects", "lifestyle scene without size intent", "macro/close-up without scale context"]
+        },
+        {
+          "id": "1.6",
+          "name": "Product in Context / In-Situ",
+          "description": "Product in its natural use environment (sofa in living room, laptop on desk).",
+          "visual_signals": ["product placed in realistic use environment", "room or setting matching product category", "styled but natural-looking scene", "product clearly visible within environment", "no people actively using the product"],
+          "negative_signals": ["isolated product on plain background", "people actively using or wearing product", "outdoor lifestyle or aspirational setting", "studio-only lighting with no environment"]
+        },
+        {
+          "id": "1.7",
+          "name": "Flat Lay / Knolling",
+          "description": "Products arranged from above in orderly geometric composition. Instagram-native aesthetic.",
+          "visual_signals": ["overhead/top-down camera angle", "items arranged in orderly geometric pattern", "flat surface as base", "multiple objects neatly organized", "symmetrical or grid-like layout"],
+          "negative_signals": ["side-angle or perspective shot", "single product in isolation", "chaotic or random arrangement", "people visible in frame"]
+        },
+        {
+          "id": "1.8",
+          "name": "Still Life",
+          "description": "Artistic composition of product with scenic elements (flowers, fabrics, materials).",
+          "visual_signals": ["product arranged with decorative props", "flowers, fabrics, or natural materials as accents", "artistic composition with intentional styling", "painterly or editorial lighting", "color palette coordination between product and props"],
+          "negative_signals": ["plain or unadorned background", "overhead flat lay angle", "text overlays or promotional copy", "people or models present"]
+        },
+        {
+          "id": "1.9",
+          "name": "Still Life + Text Overlay",
+          "description": "Still life with overlaid text: claim, benefit, price, offer.",
+          "visual_signals": ["styled product composition with props", "text overlay with claim, benefit, or value", "graphic text elements over photographic base", "promotional copy visible on image", "blend of editorial photography and typography"],
+          "negative_signals": ["no text visible on image", "people or models as subject", "plain undecorated background", "text-only design without product photo"]
+        },
+        {
+          "id": "1.10",
+          "name": "Product Collection / Grid",
+          "description": "Multiple products in grid or unique composition. Line, collection, catalog in one frame.",
+          "visual_signals": ["multiple products displayed together", "grid layout or structured arrangement", "product line or collection shown", "consistent styling across all items", "catalog-like presentation"],
+          "negative_signals": ["single product only", "lifestyle or environmental context", "people using or wearing products", "heavy text with no product grid"]
+        },
+        {
+          "id": "1.11",
+          "name": "Product Annotated / Point-Out",
+          "description": "Image with arrows, labels, callouts highlighting specific features.",
+          "visual_signals": ["arrows or lines pointing to product attributes", "text labels or callout boxes on image", "annotated product areas", "numbered or highlighted zones", "technical or explanatory graphic overlays"],
+          "negative_signals": ["no annotations or callouts visible", "clean product image without graphic overlays", "lifestyle scene without labels", "text-only layout"]
+        },
+        {
+          "id": "1.12",
+          "name": "Ingredient / Component Spotlight",
+          "description": "Focus on a single key ingredient or component.",
+          "visual_signals": ["single ingredient or raw material prominently displayed", "ingredient shown alongside product", "natural elements like herbs, minerals, or compounds", "close-up of component or active ingredient", "scientific or botanical imagery"],
+          "negative_signals": ["full product without ingredient focus", "multiple products in grid", "people or lifestyle context", "promotional text without ingredient visual"]
+        },
+        {
+          "id": "1.13",
+          "name": "360 / Multi-Angle",
+          "description": "Product shot from multiple angles for complete view. Often in carousel.",
+          "visual_signals": ["multiple views of same product in one image", "front, back, side angles shown", "carousel-style multi-frame layout", "consistent background across angles", "rotation or turntable effect"],
+          "negative_signals": ["single angle only", "different products rather than same product", "lifestyle or environmental context", "close-up of single detail"]
+        },
+        {
+          "id": "1.14",
+          "name": "Packaging Shot",
+          "description": "Product in its packaging. Enhances brand experience.",
+          "visual_signals": ["product box or packaging prominently shown", "branded packaging as main subject", "unboxing-ready presentation", "retail packaging visible with labels", "sealed or pristine package state"],
+          "negative_signals": ["product removed from packaging", "no packaging visible", "people opening package (that would be unboxing)", "plain product without brand packaging"]
+        },
+        {
+          "id": "1.15",
+          "name": "Bundle / Kit Shot",
+          "description": "Package of complementary products presented together.",
+          "visual_signals": ["multiple complementary products grouped together", "bundle or kit arrangement", "products that work together as a set", "value-pack or gift-set presentation", "coordinated product grouping"],
+          "negative_signals": ["single product only", "unrelated products in grid", "people using products", "text-only promotional content"]
+        },
+        {
+          "id": "1.16",
+          "name": "Animated Product Showcase",
+          "description": "3D animation or motion graphics: rotation, component explosion, effects.",
+          "visual_signals": ["3D rendered product visualization", "motion blur or animation frames visible", "component explosion or assembly view", "CGI or digitally rendered product", "dynamic rotation or floating elements"],
+          "negative_signals": ["static photograph", "real-world photography", "people or live-action footage", "hand-drawn or illustrated style"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lifestyle & Context",
+      "format_count": 9,
+      "formats": [
+        {
+          "id": "2.1",
+          "name": "Lifestyle / Product in Context",
+          "description": "Product inserted in aspirational or real environment (home, nature, office).",
+          "visual_signals": ["aspirational environment or setting", "product naturally placed in scene", "styled interior, outdoor, or workspace", "warm or inviting atmosphere", "no person directly using the product"],
+          "negative_signals": ["plain studio background", "person actively using or wearing product", "product isolated without environment", "clinical or sterile setting"]
+        },
+        {
+          "id": "2.2",
+          "name": "Product Worn / In-Use",
+          "description": "Real people wearing or using the product.",
+          "visual_signals": ["person actively wearing or using the product", "product visible on or in hands of user", "real-world usage scenario", "natural body interaction with product", "focus on product functionality in use"],
+          "negative_signals": ["product displayed without person", "studio-only product shot", "product still in packaging", "people present but not using product"]
+        },
+        {
+          "id": "2.3",
+          "name": "Day in the Life / Mini Vlog",
+          "description": "Daily routine of a person with the product naturally integrated.",
+          "visual_signals": ["multiple scenes or moments from a day", "casual daily activities shown", "product appears naturally in routine", "vlog-style framing or selfie angle", "time progression through the day"],
+          "negative_signals": ["single static product shot", "studio or professional set", "formal or scripted presentation", "no person or daily context visible"]
+        },
+        {
+          "id": "2.4",
+          "name": "GRWM (Get Ready With Me)",
+          "description": "Person gets ready (makeup, outfit, skincare) using the product.",
+          "visual_signals": ["person applying makeup, skincare, or getting dressed", "mirror or vanity area visible", "step-by-step preparation process", "beauty or grooming products in use", "bathroom or bedroom setting"],
+          "negative_signals": ["product without person", "outdoor or non-preparation setting", "person already fully prepared", "professional photo studio"]
+        },
+        {
+          "id": "2.5",
+          "name": "Morning/Night Routine",
+          "description": "Sequence of products used in morning or evening routine.",
+          "visual_signals": ["multiple products lined up in order of use", "bathroom or bedroom setting", "sequential application or usage shown", "time-of-day cues like sunrise or nighttime", "skincare, wellness, or grooming sequence"],
+          "negative_signals": ["single product focus", "midday or office setting", "no sequential routine visible", "product in packaging only"]
+        },
+        {
+          "id": "2.6",
+          "name": "OOTD (Outfit of the Day)",
+          "description": "Complete outfit, often with transitions or zoom.",
+          "visual_signals": ["full-body outfit display", "person posing to show complete look", "fashion-focused framing", "multiple outfit pieces visible together", "mirror selfie or full-length shot"],
+          "negative_signals": ["single non-clothing product", "close-up of face only", "product on shelf or table", "no fashion or clothing elements"]
+        },
+        {
+          "id": "2.7",
+          "name": "What I Eat in a Day",
+          "description": "All meals of the day with food products or kitchen tools.",
+          "visual_signals": ["multiple meals or food items shown", "kitchen or dining setting", "food preparation or plating visible", "meal progression through the day", "food products or kitchen tools in use"],
+          "negative_signals": ["non-food products", "single dish only without day context", "restaurant review format", "no food or kitchen visible"]
+        },
+        {
+          "id": "2.8",
+          "name": "Study/Work with Me",
+          "description": "Companion format: viewer accompanies creator during an activity.",
+          "visual_signals": ["desk or workspace setup visible", "person studying, writing, or working", "ambient or cozy atmosphere", "productivity tools or stationery visible", "first-person or over-shoulder angle"],
+          "negative_signals": ["no desk or workspace", "outdoor or non-work setting", "product-only display", "high-energy or action content"]
+        },
+        {
+          "id": "2.9",
+          "name": "\"That Girl\" / Clean Aesthetic",
+          "description": "Tidy, healthy, curated lifestyle. Neutral palette, clean spaces, minimal products.",
+          "visual_signals": ["neutral or earth-tone color palette", "clean and tidy spaces", "healthy lifestyle elements like smoothies or yoga", "minimal and curated aesthetic", "soft natural lighting"],
+          "negative_signals": ["bold or saturated colors", "cluttered or messy environment", "dark or moody atmosphere", "heavily branded or promotional look"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Behind the Scenes & Craft",
+      "format_count": 5,
+      "formats": [
+        {
+          "id": "3.1",
+          "name": "Behind the Scenes (BTS)",
+          "description": "Look behind the scenes: production, team, laboratory. Transparency and authenticity.",
+          "visual_signals": ["production environment visible (factory, lab, studio)", "team members or workers in action", "equipment, tools, or machinery shown", "raw or unpolished visual style", "workspace or facility interior"],
+          "negative_signals": ["polished final product presentation", "consumer-facing retail environment", "single product on clean background", "no production or workspace context"]
+        },
+        {
+          "id": "3.2",
+          "name": "Process Shot / How It's Made",
+          "description": "Process of creation or working of the product. Justifies premium value.",
+          "visual_signals": ["manufacturing or crafting process visible", "raw materials being transformed", "hands working on product creation", "step-by-step production stages", "craftsmanship or precision details"],
+          "negative_signals": ["finished product only", "consumer using product", "text-only explanation", "no production process visible"]
+        },
+        {
+          "id": "3.3",
+          "name": "Pack an Order with Me",
+          "description": "Preparation of an order, often in ASMR/satisfying style.",
+          "visual_signals": ["hands packing items into box or bag", "tissue paper, stickers, or branded materials", "order slip or shipping label visible", "wrapping or folding actions", "satisfying and organized packing process"],
+          "negative_signals": ["customer opening package (that is unboxing)", "product in use", "no packing or shipping context", "retail store environment"]
+        },
+        {
+          "id": "3.4",
+          "name": "Founder Story",
+          "description": "Founder tells in first person the genesis of the brand/product.",
+          "visual_signals": ["single person speaking directly to camera", "casual or personal setting (home office, workshop)", "text overlay identifying person as founder or CEO", "personal narrative tone", "brand origin or mission context clues"],
+          "negative_signals": ["multiple customers or testimonials", "product-only shot without person", "professional studio ad look", "no identifiable founder or leader figure"]
+        },
+        {
+          "id": "3.5",
+          "name": "Employee Spotlight / Team Content",
+          "description": "Team members shown authentically.",
+          "visual_signals": ["employees or team members shown", "workplace or office environment", "name tags, uniforms, or role titles visible", "candid or semi-posed group/individual shots", "behind-the-brand human element"],
+          "negative_signals": ["customers or external people shown", "product without people", "single founder narrative", "highly polished commercial production"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "UGC & Creator Content",
+      "format_count": 12,
+      "formats": [
+        {
+          "id": "4.1",
+          "name": "UGC Classic",
+          "description": "Authentic content from real customers: non-professional photos/videos. CTR 4x vs branded.",
+          "visual_signals": ["non-professional camera framing", "real customer in everyday setting", "unpolished lighting and composition", "product shown in genuine use context", "selfie or casual phone-shot aesthetic"],
+          "negative_signals": ["professional studio lighting", "brand-produced polished visuals", "no person or customer visible", "celebrity or known influencer"]
+        },
+        {
+          "id": "4.2",
+          "name": "UGC Talking Head",
+          "description": "Creator speaks directly to camera about their experience with the product.",
+          "visual_signals": ["person speaking directly to camera", "head and shoulders framing", "casual or home setting background", "natural or phone-level lighting", "personal testimonial or opinion delivery"],
+          "negative_signals": ["professional studio setup", "no person speaking", "product-only shot", "scripted commercial narration style"]
+        },
+        {
+          "id": "4.3",
+          "name": "Unboxing",
+          "description": "Opening of the package: packaging, first impression, contents. Generates anticipation.",
+          "visual_signals": ["hands opening a package or box", "packaging being revealed or torn", "product emerging from box", "tissue paper or packaging materials visible", "first-reaction facial expression or exclamation"],
+          "negative_signals": ["product already out of box and in use", "no packaging visible", "professional product photography", "product on plain background"]
+        },
+        {
+          "id": "4.4",
+          "name": "Haul",
+          "description": "Presentation of multiple purchased products in a single video.",
+          "visual_signals": ["multiple shopping bags or packages", "several different products displayed sequentially", "person showing many recent purchases", "bed or floor covered with items", "excited presentation of variety of products"],
+          "negative_signals": ["single product focus", "professional catalog layout", "no person presenting", "products already in use"]
+        },
+        {
+          "id": "4.5",
+          "name": "Try-On",
+          "description": "Physical try-on of garments with reactions on fit, material, look.",
+          "visual_signals": ["person trying on clothing or accessories", "mirror or full-body shot", "fit check or sizing commentary", "multiple outfits or items tried sequentially", "reactions to how items look or fit"],
+          "negative_signals": ["non-clothing products", "product on hanger or flat", "no person wearing items", "professional fashion editorial"]
+        },
+        {
+          "id": "4.6",
+          "name": "Reaction Video",
+          "description": "Spontaneous reaction to product: surprise, enthusiasm.",
+          "visual_signals": ["exaggerated facial expressions of surprise or delight", "person reacting in real-time to product", "candid emotional response captured", "close-up of face showing reaction", "unscripted spontaneous moment"],
+          "negative_signals": ["calm or neutral product presentation", "scripted commercial dialogue", "no person or face visible", "professional review format"]
+        },
+        {
+          "id": "4.7",
+          "name": "ASMR Product",
+          "description": "Emphasis on sounds: opening, texture, application. No speech. Hypnotic.",
+          "visual_signals": ["extreme close-up of product texture or surface", "hands slowly touching or manipulating product", "no visible speech or talking", "soft lighting and intimate framing", "focus on tactile or sensory elements"],
+          "negative_signals": ["person speaking to camera", "wide-angle or environmental shot", "fast-paced editing or transitions", "text-heavy promotional layout"]
+        },
+        {
+          "id": "4.8",
+          "name": "Taste Test / Blind Test",
+          "description": "Product trial for the first time with honest judgment.",
+          "visual_signals": ["person tasting or trying product for first time", "blind test setup with hidden labels", "genuine reaction to product result", "multiple products compared in tasting", "first-impression commentary visible"],
+          "negative_signals": ["product displayed without person testing", "long-term review format", "professional food photography", "no trial or testing moment"]
+        },
+        {
+          "id": "4.9",
+          "name": "Honest Review / \"Brutally Honest\"",
+          "description": "Unfiltered review with pros and cons. Generates superior trust.",
+          "visual_signals": ["person discussing both pros and cons", "casual or authentic setting", "product held up or shown during review", "balanced or critical tone visible in expressions", "text overlays mentioning pros/cons or rating"],
+          "negative_signals": ["purely promotional or one-sided praise", "professional brand-produced ad", "no person giving opinion", "product-only shot without review context"]
+        },
+        {
+          "id": "4.10",
+          "name": "Ranking / Tier List",
+          "description": "Classification of multiple products in categories (S/A/B/C/D).",
+          "visual_signals": ["tier list graphic with S/A/B/C/D or ranking labels", "multiple products arranged by ranking", "numbered or scored product comparison", "visual hierarchy showing best to worst", "creator pointing to or placing items in tiers"],
+          "negative_signals": ["single product review", "no ranking or comparison structure", "professional product catalog", "side-by-side of only two items"]
+        },
+        {
+          "id": "4.11",
+          "name": "Mashup / Compilation UGC",
+          "description": "Fast montage of multiple UGC clips from different customers.",
+          "visual_signals": ["multiple different people or clips in rapid sequence", "varied settings and camera angles across clips", "compilation or montage editing style", "different UGC sources stitched together", "fast-paced transitions between user clips"],
+          "negative_signals": ["single person throughout", "professional single-take production", "static product image", "slow or single-scene pacing"]
+        },
+        {
+          "id": "4.12",
+          "name": "Whitelisted / Partnership Ad",
+          "description": "Creator content promoted from the creator's account (not the brand's).",
+          "visual_signals": ["creator's personal style and branding visible", "sponsored or partnership label/tag present", "creator's native content format", "brand product integrated into creator's aesthetic", "posted from creator profile with ad disclosure"],
+          "negative_signals": ["brand's own account styling", "no creator personality or identity", "pure product photography", "corporate or brand-centric production"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Social Proof & Trust",
+      "format_count": 9,
+      "formats": [
+        {
+          "id": "5.1",
+          "name": "Customer Review / Quote Card",
+          "description": "Text review with stars, name and photo on product image.",
+          "visual_signals": ["star rating graphic visible", "customer quote or review text on image", "customer name or avatar shown", "product image as background or beside text", "review-card graphic design layout"],
+          "negative_signals": ["no review text or stars visible", "person speaking on video", "product-only without review overlay", "brand-written copy without customer attribution"]
+        },
+        {
+          "id": "5.2",
+          "name": "Video Testimonial",
+          "description": "Real customer speaks to camera about their experience.",
+          "visual_signals": ["real customer speaking to camera", "personal story or experience being shared", "non-professional setting (home, outdoors)", "emotional or genuine delivery", "product visible or referenced during speech"],
+          "negative_signals": ["professional actor or spokesperson", "text-only review card", "no person speaking", "heavily scripted commercial dialogue"]
+        },
+        {
+          "id": "5.3",
+          "name": "Case Study / Customer Story",
+          "description": "Structured story: situation, challenge, product, result.",
+          "visual_signals": ["structured narrative with clear sections", "before situation and after result shown", "data points or metrics displayed", "customer journey documented", "situation-to-solution arc visible"],
+          "negative_signals": ["simple quote or one-liner review", "product shot without story", "no customer narrative", "generic promotional content"]
+        },
+        {
+          "id": "5.4",
+          "name": "Social Proof Aggregated",
+          "description": "Numbers (\"50,000+ customers\"), media logos, award badges, aggregated ratings.",
+          "visual_signals": ["large numbers or statistics displayed prominently", "customer count or rating aggregation", "media outlet logos grouped together", "trust badges or certification icons", "social proof metrics as main visual element"],
+          "negative_signals": ["single individual review", "no numbers or aggregate data", "product-only image", "personal testimonial format"]
+        },
+        {
+          "id": "5.5",
+          "name": "Press / \"As Seen In\"",
+          "description": "Mentions from newspapers, magazines, TV shows.",
+          "visual_signals": ["media outlet logos (newspapers, magazines, TV)", "\"As Seen In\" or \"In the Press\" text", "press quotes or excerpts visible", "publication names or mastheads shown", "editorial credibility layout"],
+          "negative_signals": ["customer reviews instead of press", "no media logos or publication names", "influencer content", "brand-only messaging"]
+        },
+        {
+          "id": "5.6",
+          "name": "Expert / Authority Endorsement",
+          "description": "Sector professional validates the product (dermatologist, chef, engineer).",
+          "visual_signals": ["professional title or credentials displayed", "expert in professional setting (lab coat, clinic, kitchen)", "authority figure endorsing product", "professional credibility indicators visible", "expert opinion or recommendation text"],
+          "negative_signals": ["regular customer without credentials", "influencer without professional authority", "no expert or title visible", "brand spokesperson without expertise claim"]
+        },
+        {
+          "id": "5.7",
+          "name": "Influencer / Creator Endorsement",
+          "description": "Creator presents the product in their own style, leveraging authority and following.",
+          "visual_signals": ["recognizable creator or influencer shown", "creator's personal style and aesthetic", "sponsored content indicators", "product integrated into creator's content format", "creator's branding or visual identity present"],
+          "negative_signals": ["unknown regular customer", "brand-produced content without creator identity", "product-only shot", "expert with professional credentials instead"]
+        },
+        {
+          "id": "5.8",
+          "name": "Awards / Certifications",
+          "description": "Badges, awards, certifications (organic, cruelty-free).",
+          "visual_signals": ["award badges or trophy graphics", "certification seals (organic, cruelty-free, FDA)", "winner labels or ribbon graphics", "official certification logos prominently displayed", "product shown alongside achievement badges"],
+          "negative_signals": ["no badges, seals, or award graphics", "customer review text only", "press logos without awards", "product without certification elements"]
+        },
+        {
+          "id": "5.9",
+          "name": "Comment Box / Native Comment",
+          "description": "Simulates real social comment below the product. Blends with feed.",
+          "visual_signals": ["simulated social media comment UI", "comment box or reply thread design", "user avatar and username in comment format", "native platform comment styling", "product image with overlaid comment bubble"],
+          "negative_signals": ["formal review card layout", "no comment-style UI elements", "professional testimonial format", "brand-designed graphic without social UI"]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Problem-Solution & Transformation",
+      "format_count": 9,
+      "formats": [
+        {
+          "id": "6.1",
+          "name": "Problem-Solution (classic)",
+          "description": "Two acts: recognizable problem, then product as solution.",
+          "visual_signals": ["clear problem scenario depicted", "product introduced as solution", "two-part visual structure (problem then solution)", "frustration or pain point imagery", "resolution or relief shown after product"],
+          "negative_signals": ["product-only without problem context", "before/after split screen", "no problem or pain point depicted", "purely aspirational imagery"]
+        },
+        {
+          "id": "6.2",
+          "name": "Problem-Agitate-Solution (PAS)",
+          "description": "Three acts: problem, amplification of consequences, solution.",
+          "visual_signals": ["problem introduced and then escalated", "consequences of inaction highlighted", "three-part narrative structure visible", "emotional amplification of the issue", "product presented as ultimate resolution"],
+          "negative_signals": ["simple two-part problem-solution", "no escalation or agitation phase", "positive-only messaging", "product display without narrative"]
+        },
+        {
+          "id": "6.3",
+          "name": "Before / After",
+          "description": "Split screen or sequence before/after use.",
+          "visual_signals": ["split screen or side-by-side comparison", "before and after labels or indicators", "visible transformation between two states", "same subject in two different conditions", "chronological improvement shown"],
+          "negative_signals": ["single state shown without comparison", "competitor comparison (that is Us vs. Them)", "no visible transformation", "text-only claims without visual evidence"]
+        },
+        {
+          "id": "6.4",
+          "name": "Pain Point Dramatization",
+          "description": "The problem is exaggerated (with humor or dramatization).",
+          "visual_signals": ["exaggerated depiction of a problem", "humorous or dramatic staging of frustration", "over-the-top reaction to everyday issue", "theatrical or comedic problem portrayal", "clear contrast between drama and product ease"],
+          "negative_signals": ["realistic problem depiction without exaggeration", "purely positive or aspirational content", "no problem or frustration shown", "serious documentary tone"]
+        },
+        {
+          "id": "6.5",
+          "name": "Myth-Busting",
+          "description": "Debunks common beliefs, positioning the product as truth.",
+          "visual_signals": ["myth vs. fact or truth structure", "crossed-out or debunked statements", "corrective text overlays", "educational tone opposing assumptions", "product positioned as the truthful alternative"],
+          "negative_signals": ["no myth or misconception referenced", "purely promotional without debunking", "personal testimonial format", "before/after transformation"]
+        },
+        {
+          "id": "6.6",
+          "name": "Expectation vs. Reality",
+          "description": "Humorous contrast between expectation and reality.",
+          "visual_signals": ["two panels showing expectation and reality", "humorous gap between idealized and actual", "meme-style split comparison", "comedic or self-deprecating tone", "relatable everyday scenario contrast"],
+          "negative_signals": ["serious before/after transformation", "no humor or contrast", "single-panel image", "professional product photography"]
+        },
+        {
+          "id": "6.7",
+          "name": "How It Started vs. How It's Going",
+          "description": "Viral template showing evolution over time.",
+          "visual_signals": ["two-panel temporal comparison", "how it started and how it is going labels", "progression or growth shown over time", "nostalgic or throwback first panel", "current success or improvement in second panel"],
+          "negative_signals": ["no temporal comparison", "single moment in time", "before/after product use (not a journey)", "no evolution narrative"]
+        },
+        {
+          "id": "6.8",
+          "name": "Result Tracking / Challenge",
+          "description": "Documentation over time (7-day, 30-day challenge).",
+          "visual_signals": ["day-by-day or week-by-week progress shown", "numbered days or timeline markers", "progressive improvement documentation", "specific timeframe mentioned (7-day, 30-day)", "multiple time-stamped images or frames"],
+          "negative_signals": ["single before/after without timeline", "no time progression shown", "one-time product use", "instant result claim"]
+        },
+        {
+          "id": "6.9",
+          "name": "Switching Story",
+          "description": "Customer tells why they abandoned the competitor for you.",
+          "visual_signals": ["reference to previous product or competitor", "customer narrative about switching brands", "old product vs. new product shown", "reasons for change listed or explained", "personal journey from competitor to brand"],
+          "negative_signals": ["no competitor or alternative referenced", "new customer without switching context", "brand comparison table (that is competitive format)", "product-only without customer narrative"]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Comparison & Competitive",
+      "format_count": 5,
+      "formats": [
+        {
+          "id": "7.1",
+          "name": "Us vs. Them",
+          "description": "Direct comparison with competitor: table, split screen, narrative.",
+          "visual_signals": ["two products or brands side by side", "direct competitor naming or reference", "split screen with brand vs. competitor", "comparison points or attribute matchup", "clear winner positioning for the brand"],
+          "negative_signals": ["single product without comparison", "before/after of same product", "no competitor reference", "generic product showcase"]
+        },
+        {
+          "id": "7.2",
+          "name": "Us vs. Old Way",
+          "description": "Comparison with traditional method or previous solution.",
+          "visual_signals": ["modern product vs. outdated method shown", "traditional tool or approach depicted", "old-fashioned vs. contemporary contrast", "obsolete solution juxtaposed with innovation", "convenience or efficiency comparison"],
+          "negative_signals": ["comparison with named competitor brand", "no traditional or old method shown", "product-only without comparison", "two modern products compared"]
+        },
+        {
+          "id": "7.3",
+          "name": "Side-by-Side Demo",
+          "description": "Two products tested in parallel with tangible results.",
+          "visual_signals": ["two products physically tested simultaneously", "parallel demonstration with visible results", "same test applied to both products", "real-time performance comparison", "tangible outcome difference shown"],
+          "negative_signals": ["static comparison table without demo", "single product demonstration", "no parallel testing visible", "text-only comparison"]
+        },
+        {
+          "id": "7.4",
+          "name": "\"Why We're Different\"",
+          "description": "Unique differentiators without naming competitors. Implicit positioning.",
+          "visual_signals": ["unique selling points highlighted", "differentiator list or attribute callouts", "implicit competitive positioning", "brand advantages enumerated without naming rivals", "unlike others or only we type messaging"],
+          "negative_signals": ["named competitor comparison", "no differentiators mentioned", "pure product description", "customer testimonial format"]
+        },
+        {
+          "id": "7.5",
+          "name": "Comparison Table",
+          "description": "Static comparison table with check/X.",
+          "visual_signals": ["table or grid layout with rows and columns", "checkmarks and X marks in cells", "attribute list compared across options", "structured tabular data presentation", "clear visual scoring system"],
+          "negative_signals": ["narrative or video comparison", "no table structure", "single product attribute list", "side-by-side physical demo"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Educational & Informational",
+      "format_count": 10,
+      "formats": [
+        {
+          "id": "8.1",
+          "name": "How-To / Tutorial",
+          "description": "Step-by-step guide to using the product or solving a problem.",
+          "visual_signals": ["numbered or sequential steps shown", "instructional text or narration", "hands demonstrating product usage", "tutorial-style step progression", "clear beginning-to-end process"],
+          "negative_signals": ["no instructional content", "product-only beauty shot", "entertainment or humor focus", "single static product image"]
+        },
+        {
+          "id": "8.2",
+          "name": "Step-by-Step / Multi-frame",
+          "description": "Sequential instructions in multiple frames. Frame 1: result, then steps, then CTA.",
+          "visual_signals": ["multiple frames or panels in sequence", "numbered steps across frames", "result shown first then steps follow", "carousel or multi-image format", "call-to-action in final frame"],
+          "negative_signals": ["single frame image", "video-only tutorial without frames", "no sequential structure", "product grid without instructions"]
+        },
+        {
+          "id": "8.3",
+          "name": "Explainer (Animated or Live)",
+          "description": "Explains complex concept or product simply. Motion graphics or whiteboard.",
+          "visual_signals": ["animated graphics explaining a concept", "whiteboard or illustration-style visuals", "simplified diagrams or flowcharts", "motion graphics with explanatory text", "complex idea broken into simple visuals"],
+          "negative_signals": ["live-action product demonstration", "static product photograph", "person speaking without visual aids", "entertainment content without education"]
+        },
+        {
+          "id": "8.4",
+          "name": "Listicle / Benefits List",
+          "description": "Numbered list (3, 5, 7 reasons why...). Scannable, immediate value.",
+          "visual_signals": ["numbered list format (3, 5, 7 items)", "bullet points or numbered benefits", "scannable text layout", "X reasons why or top X headline", "each point with icon or visual marker"],
+          "negative_signals": ["narrative paragraph format", "single benefit highlighted", "no list structure", "purely visual without text list"]
+        },
+        {
+          "id": "8.5",
+          "name": "Feature Highlight / Specs",
+          "description": "Technical features, ingredients, specifications. Rational approach.",
+          "visual_signals": ["technical specifications listed", "ingredient list or composition details", "attribute icons with descriptions", "data-driven rational presentation", "product with technical callouts"],
+          "negative_signals": ["emotional or lifestyle approach", "no technical details visible", "person-focused testimonial", "abstract brand storytelling"]
+        },
+        {
+          "id": "8.6",
+          "name": "Infographic",
+          "description": "Data, statistics and visuals in dense informational format.",
+          "visual_signals": ["dense information layout with data visualization", "charts, graphs, or statistical graphics", "icon-rich informational design", "data points organized visually", "educational visual hierarchy"],
+          "negative_signals": ["single statistic or number", "product photography without data", "text-only without visual data elements", "lifestyle imagery"]
+        },
+        {
+          "id": "8.7",
+          "name": "Stat / Data Callout",
+          "description": "Single statistical data point with strong visual impact.",
+          "visual_signals": ["single bold statistic prominently displayed", "large number or percentage as focal point", "minimal design centered on one data point", "impactful numerical claim", "visual emphasis on the statistic"],
+          "negative_signals": ["multiple data points or full infographic", "no numbers or statistics", "narrative text without data", "product image without data callout"]
+        },
+        {
+          "id": "8.8",
+          "name": "FAQ Visual",
+          "description": "Frequently asked questions in visual format. Resolves pre-purchase objections.",
+          "visual_signals": ["question and answer format visible", "FAQ-style layout with Q&A pairs", "common objections addressed visually", "question marks or inquiry formatting", "multiple questions with corresponding answers"],
+          "negative_signals": ["no questions or Q&A structure", "single statement or claim", "tutorial without question framing", "testimonial format"]
+        },
+        {
+          "id": "8.9",
+          "name": "Tip & Hack / Life Hack",
+          "description": "Practical advice involving the product. High save/share rate.",
+          "visual_signals": ["practical tip or hack demonstrated", "clever or unconventional product usage", "did you know or hack text indicators", "useful shortcut or trick shown", "save-worthy practical advice format"],
+          "negative_signals": ["standard product tutorial", "no tip or clever usage", "purely promotional content", "formal educational format"]
+        },
+        {
+          "id": "8.10",
+          "name": "Educational Grid (2x3 / 3x3)",
+          "description": "Visual grid with informational elements and product as answer.",
+          "visual_signals": ["2x3 or 3x3 grid layout", "educational content in each cell", "product positioned as solution in grid", "visual grid with icons or images per cell", "structured informational matrix"],
+          "negative_signals": ["single panel or full-width layout", "product catalog grid without education", "no grid structure", "narrative or sequential format"]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Storytelling & Emotional",
+      "format_count": 9,
+      "formats": [
+        {
+          "id": "9.1",
+          "name": "Brand Story / Origin Story",
+          "description": "Brand story, mission, \"why\". Emotional connection.",
+          "visual_signals": ["brand founding or mission narrative", "historical or origin imagery", "founder or early brand photos", "mission statement or values displayed", "emotional brand heritage visuals"],
+          "negative_signals": ["product-only focus without brand narrative", "customer story instead of brand story", "promotional offer content", "no mission or origin context"]
+        },
+        {
+          "id": "9.2",
+          "name": "Customer Journey / Success Story",
+          "description": "Complete customer path: problem, discovery, result.",
+          "visual_signals": ["customer narrative arc from difficulty to success", "discovery moment of the product shown", "transformation journey of a real person", "multiple stages of customer experience", "personal success attributed to product"],
+          "negative_signals": ["brand origin story instead of customer", "simple before/after without journey", "single review quote", "no customer narrative visible"]
+        },
+        {
+          "id": "9.3",
+          "name": "Emotional Appeal",
+          "description": "Deep emotions: nostalgia, joy, belonging, fulfillment.",
+          "visual_signals": ["emotionally evocative imagery", "warm or sentimental visual tone", "human connection or bonding moments", "nostalgic or joyful scenes", "soft lighting and emotional color grading"],
+          "negative_signals": ["rational or data-driven approach", "product specs or attributes focus", "humorous or comedic tone", "clinical or sterile presentation"]
+        },
+        {
+          "id": "9.4",
+          "name": "Aspirational / Lifestyle",
+          "description": "Sells the lifestyle, not the product. Evocative images.",
+          "visual_signals": ["aspirational lifestyle imagery", "desirable life scenario depicted", "product secondary to lifestyle vision", "high-end or idealized environments", "evocative mood with minimal product focus"],
+          "negative_signals": ["product-centric close-up", "technical specifications shown", "before/after transformation", "direct promotional offer"]
+        },
+        {
+          "id": "9.5",
+          "name": "Mini-Series / Story Arc",
+          "description": "Sequence of connected ads in chapters (\"tease, amplify, echo\").",
+          "visual_signals": ["chapter or episode numbering visible", "part 1, 2, 3 or sequential indicators", "connected narrative across multiple pieces", "cliffhanger or continuation cues", "series branding or consistent visual thread"],
+          "negative_signals": ["standalone single ad", "no sequential indicators", "unrelated content pieces", "one-off promotional message"]
+        },
+        {
+          "id": "9.6",
+          "name": "Day-in-the-Life (narrative)",
+          "description": "Typical day showing the product in natural routine.",
+          "visual_signals": ["chronological day progression narrative", "morning to evening time markers", "product woven into daily moments", "storytelling framing of routine", "personal and relatable daily scenes"],
+          "negative_signals": ["single moment without day context", "product-only display", "no time progression", "promotional offer focus"]
+        },
+        {
+          "id": "9.7",
+          "name": "Humor / Comedy / Skit",
+          "description": "Humor to capture attention and create positive association.",
+          "visual_signals": ["comedic setup and punchline structure", "exaggerated or funny expressions", "skit or sketch-style performance", "humorous text overlays or captions", "lighthearted and entertaining tone"],
+          "negative_signals": ["serious or formal tone", "educational or informational approach", "emotional or sentimental content", "straightforward product demonstration"]
+        },
+        {
+          "id": "9.8",
+          "name": "Storytime",
+          "description": "Personal anecdote linked to the product, in narrative style.",
+          "visual_signals": ["person telling a personal story", "anecdotal narrative delivery", "casual conversational setting", "storytime or narrative text cues", "personal experience shared in first person"],
+          "negative_signals": ["product review without personal story", "brand narrative instead of personal", "no person narrating", "data-driven or factual presentation"]
+        },
+        {
+          "id": "9.9",
+          "name": "Documentary-Style",
+          "description": "Long, cinematic narrative, focus on the story.",
+          "visual_signals": ["cinematic aspect ratio or letterboxing", "documentary filming techniques", "interview-style framing with b-roll", "high production value storytelling", "narrative depth and long-form feel"],
+          "negative_signals": ["quick social media format", "lo-fi or phone-shot result", "product-focused close-up", "text-only or static graphic"]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Offer & Promo-Driven",
+      "format_count": 9,
+      "formats": [
+        {
+          "id": "10.1",
+          "name": "Hard Offer / Promo",
+          "description": "Direct communication of discount, coupon, limited offer.",
+          "visual_signals": ["discount percentage or amount prominently shown", "coupon code displayed", "promotional banner or badge", "sale or offer text as main element", "reduced pricing clearly communicated"],
+          "negative_signals": ["no discount or offer mentioned", "pure brand storytelling", "educational content", "lifestyle imagery without promotional text"]
+        },
+        {
+          "id": "10.2",
+          "name": "Hard Promise",
+          "description": "Strong promise (\"Results in 30 days or refunded\").",
+          "visual_signals": ["bold assurance or promise statement", "money-back or satisfaction pledge text", "specific results timeframe promised", "assurance badge or seal", "confident claim as primary message"],
+          "negative_signals": ["no assurance or promise visible", "soft or qualified language", "testimonial instead of brand promise", "product attributes without pledges"]
+        },
+        {
+          "id": "10.3",
+          "name": "Countdown / Urgency",
+          "description": "Timer or deadline to create urgency.",
+          "visual_signals": ["countdown timer graphic visible", "deadline date or time displayed", "ends tonight or last chance text", "urgency-creating visual elements", "ticking clock or hourglass imagery"],
+          "negative_signals": ["no time pressure or deadline", "evergreen product content", "no urgency indicators", "casual or relaxed messaging tone"]
+        },
+        {
+          "id": "10.4",
+          "name": "Scarcity / Limited Edition",
+          "description": "Limited availability (\"Only 50 pieces\"). Scarcity psychological bias.",
+          "visual_signals": ["limited quantity callout visible", "only X left or limited edition text", "exclusive or rare positioning", "numbered edition indicator", "scarcity-driven messaging"],
+          "negative_signals": ["no scarcity or limitation mentioned", "widely available product messaging", "no quantity restriction indicated", "evergreen promotional content"]
+        },
+        {
+          "id": "10.5",
+          "name": "Free Shipping / Bonus Offer",
+          "description": "Removal of purchase barrier as main message.",
+          "visual_signals": ["no-cost shipping callout prominently displayed", "bonus item or gift with purchase shown", "barrier-removal messaging (returns, no risk)", "shipping icon or delivery graphic", "added-value offer as main message"],
+          "negative_signals": ["no shipping or bonus mention", "discount-focused instead of barrier removal", "product-only without offer", "no purchase incentive visible"]
+        },
+        {
+          "id": "10.6",
+          "name": "Seasonal / Holiday",
+          "description": "Themed on season, holiday, event (Black Friday, Christmas).",
+          "visual_signals": ["seasonal decorations or motifs", "holiday-specific colors and symbols", "event branding (Black Friday, Valentine's, Christmas)", "seasonal product presentation", "festive or thematic visual elements"],
+          "negative_signals": ["no seasonal or holiday reference", "generic evergreen styling", "no festive elements or decorations", "standard product presentation"]
+        },
+        {
+          "id": "10.7",
+          "name": "New Launch / Announcement",
+          "description": "Announces new product or feature. Novelty effect.",
+          "visual_signals": ["NEW or just launched text prominent", "announcement-style layout and typography", "reveal or unveiling visual treatment", "product debut or introduction framing", "novelty and excitement indicators"],
+          "negative_signals": ["established product without newness", "no launch or announcement language", "restock or sale of existing product", "review of previously available item"]
+        },
+        {
+          "id": "10.8",
+          "name": "Price Anchor",
+          "description": "Crossed-out price + discounted price, or daily cost.",
+          "visual_signals": ["original amount crossed out with new amount below", "pricing comparison displayed prominently", "daily or per-unit cost breakdown", "strikethrough pricing visible", "value framing through anchoring"],
+          "negative_signals": ["no pricing shown", "single amount without comparison", "percentage discount without amounts", "no pricing or cost information"]
+        },
+        {
+          "id": "10.9",
+          "name": "Bundle / Kit Offer",
+          "description": "Package at special price. Often in group shot or carousel.",
+          "visual_signals": ["multiple products grouped at special pricing", "bundle pricing displayed", "savings compared to individual purchase shown", "grouped product arrangement with offer text", "package deal visual presentation"],
+          "negative_signals": ["single product at regular pricing", "no bundle or package offer", "products shown individually without deal", "no pricing or savings indicated"]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Native & Trend-Driven",
+      "format_count": 12,
+      "formats": [
+        {
+          "id": "11.1",
+          "name": "Talking Head",
+          "description": "Person speaks directly to camera. Intimate, conversational.",
+          "visual_signals": ["person speaking directly to camera", "head and shoulders or waist-up framing", "direct eye contact with lens", "conversational and intimate tone", "simple or personal background"],
+          "negative_signals": ["no person speaking", "product-only shot", "group interview or panel", "text-only graphic"]
+        },
+        {
+          "id": "11.2",
+          "name": "Lo-Fi / \"Ugly Ads\"",
+          "description": "Intentionally unproduced, shot with phone. Look organic.",
+          "visual_signals": ["phone-captured camera footage", "intentionally unpolished or raw aesthetic", "handheld or shaky camera movement", "no professional lighting setup visible", "native social media look and feel"],
+          "negative_signals": ["professional studio production level", "polished editing and transitions", "high-end lighting and color grading", "brand-produced commercial aesthetic"]
+        },
+        {
+          "id": "11.3",
+          "name": "POV (Point of View)",
+          "description": "First-person perspective. \"POV: you discover our product.\"",
+          "visual_signals": ["first-person camera perspective", "viewer's hands or POV framing", "POV text overlay at top", "subjective camera angle as if viewer is acting", "immersive first-person experience"],
+          "negative_signals": ["third-person or observer perspective", "person facing camera talking", "product displayed from external view", "no first-person framing"]
+        },
+        {
+          "id": "11.4",
+          "name": "Trend-Jacking / Trending Sound",
+          "description": "Exploits viral trend adapted to the product. Window: 48-72 hours.",
+          "visual_signals": ["recognizable viral trend format replicated", "trending audio or sound reference", "meme template adapted with product", "current cultural moment reference", "trend-specific choreography or format"],
+          "negative_signals": ["original non-trend content", "evergreen format without trend reference", "professional brand campaign", "no viral or cultural reference"]
+        },
+        {
+          "id": "11.5",
+          "name": "Meme / Internet Culture",
+          "description": "Adaptation of popular memes to brand context.",
+          "visual_signals": ["recognizable meme template or format", "internet culture reference or humor", "impact font or meme-style text", "image macro or reaction image format", "brand message in meme structure"],
+          "negative_signals": ["original branded content without meme reference", "professional photography", "no internet culture elements", "serious or formal tone"]
+        },
+        {
+          "id": "11.6",
+          "name": "Challenge / Branded Hashtag",
+          "description": "Challenge replicable by users using the product.",
+          "visual_signals": ["instructions or rules for a challenge visible", "branded hashtag prominently displayed", "participatory call-to-action", "user-replicable activity demonstrated", "community engagement format"],
+          "negative_signals": ["passive viewing content", "no hashtag or activity mentioned", "solo review without participation call", "standard product advertisement"]
+        },
+        {
+          "id": "11.7",
+          "name": "Duet",
+          "description": "Video placed side by side with another video. Reactions, comparisons, complements.",
+          "visual_signals": ["split screen with two videos side by side", "reaction to another creator's video", "duet-style vertical split layout", "two synchronized or responsive video streams", "TikTok/Reels duet format indicators"],
+          "negative_signals": ["single full-screen video", "no split-screen layout", "static image without video pairing", "standard comparison without duet format"]
+        },
+        {
+          "id": "11.8",
+          "name": "Stitch",
+          "description": "Clip cut from another video + own content in sequence.",
+          "visual_signals": ["clip from another video followed by original response", "stitched video transition point visible", "reference to another creator's content in sequence", "two distinct video segments in one clip", "stitch label or attribution visible"],
+          "negative_signals": ["single continuous video without external clip", "side-by-side duet format", "fully original content throughout", "no reference to another video"]
+        },
+        {
+          "id": "11.9",
+          "name": "Reply to Comment",
+          "description": "The ad picks up a real comment and responds in video.",
+          "visual_signals": ["pinned comment or comment bubble at top of video", "creator responding to a specific user comment", "comment text overlaid on video", "reply-style video framing", "social media comment UI element visible"],
+          "negative_signals": ["no comment reference visible", "original content without reply context", "brand-initiated message without user comment", "FAQ format without social comment UI"]
+        },
+        {
+          "id": "11.10",
+          "name": "Green Screen",
+          "description": "Creator on custom background (images, websites, articles).",
+          "visual_signals": ["person overlaid on digital background image", "green screen effect with custom backdrop", "article, website, or image as background behind person", "creator pointing at or referencing background content", "visible edge between person and replaced background"],
+          "negative_signals": ["real physical background environment", "no background replacement visible", "product-only shot", "standard studio or home setting"]
+        },
+        {
+          "id": "11.11",
+          "name": "Screenshot / Native-Looking",
+          "description": "Simulates real screenshot: notification, chat, email. Blends in feed.",
+          "visual_signals": ["simulated phone screenshot UI", "notification or chat message interface", "email or text conversation format", "native app interface elements visible", "designed to look like organic phone content"],
+          "negative_signals": ["clearly designed ad without screenshot feel", "professional photography", "no phone UI or app interface elements", "standard product image layout"]
+        },
+        {
+          "id": "11.12",
+          "name": "Street Interview / Vox Pop",
+          "description": "Casual interviews with people on the street on a topic related to the product.",
+          "visual_signals": ["people interviewed in outdoor public location", "microphone held up to interviewees", "street or sidewalk setting", "multiple random people giving opinions", "casual interview-style framing"],
+          "negative_signals": ["studio or indoor interview", "single person monologue", "no interview or question-answer format", "scripted commercial dialogue"]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Visual Design & Production Style",
+      "format_count": 17,
+      "formats": [
+        {
+          "id": "12.1",
+          "name": "Bold Text / Typography-First",
+          "description": "Textual message as protagonist. Large font, contrast, no photo.",
+          "visual_signals": ["large bold typography as main visual element", "text dominates the entire frame", "high contrast between text and background", "minimal or no photography", "statement or headline-driven design"],
+          "negative_signals": ["product photography as main element", "small or secondary text", "person or lifestyle imagery dominant", "data visualization or infographic"]
+        },
+        {
+          "id": "12.2",
+          "name": "Quote Card",
+          "description": "Quote (founder, customer, expert) in graphic format.",
+          "visual_signals": ["quotation marks or quote formatting visible", "attributed quote with name or source", "graphic card design with quote text", "minimalist layout centered on the quote", "author photo or icon alongside quote"],
+          "negative_signals": ["no quote or attribution", "product-focused image", "long-form text or article", "video testimonial format"]
+        },
+        {
+          "id": "12.3",
+          "name": "Minimalist / Clean",
+          "description": "Essential design, lots of white space, one message. Premium.",
+          "visual_signals": ["abundant white or negative space", "very few visual elements", "single focused message or product", "clean and uncluttered layout", "premium or luxury feel through simplicity"],
+          "negative_signals": ["busy or cluttered design", "multiple competing messages", "bold colors filling entire frame", "dense text or information overload"]
+        },
+        {
+          "id": "12.4",
+          "name": "Color Blocking",
+          "description": "Contrasting and saturated color blocks. Strong scroll-stopping power.",
+          "visual_signals": ["large blocks of saturated contrasting colors", "geometric color sections dividing the frame", "bold color palette as primary design element", "graphic and vibrant visual impact", "product placed within or against color blocks"],
+          "negative_signals": ["white or neutral monochrome background", "photographic scene without color blocks", "subtle or muted color palette", "text-only design"]
+        },
+        {
+          "id": "12.5",
+          "name": "Collage / Scrapbook",
+          "description": "Multiple images, cutouts, overlaid texts in editorial style.",
+          "visual_signals": ["multiple layered images and cutouts", "scrapbook or editorial collage aesthetic", "overlapping elements and textures", "handmade or curated collage feel", "mixed media with photos, text, and graphics"],
+          "negative_signals": ["single clean product photo", "minimalist or clean design", "uniform grid layout", "professional single-shot photography"]
+        },
+        {
+          "id": "12.6",
+          "name": "Mood Board",
+          "description": "Aggregation of images, textures, palette to communicate an atmosphere.",
+          "visual_signals": ["collection of thematic images grouped together", "color palette swatches or texture samples", "atmospheric or tonal visual grouping", "Pinterest-style image aggregation", "cohesive mood or aesthetic communicated through imagery"],
+          "negative_signals": ["single product photo", "structured data or comparison", "text-heavy promotional content", "action or lifestyle scene"]
+        },
+        {
+          "id": "12.7",
+          "name": "Stop Motion",
+          "description": "Frame-by-frame animation with real objects. Eye-catching.",
+          "visual_signals": ["frame-by-frame animation with physical objects", "jerky or stepped movement characteristic of stop motion", "real objects appearing to move on their own", "creative object manipulation animation", "visible frame transitions in sequence"],
+          "negative_signals": ["smooth video footage", "static photograph", "digital motion graphics", "live-action footage with people"]
+        },
+        {
+          "id": "12.8",
+          "name": "GIF / Cinemagraph",
+          "description": "Image with single element in motion. Halfway between static/video.",
+          "visual_signals": ["mostly still image with one element in subtle motion", "looping short animation", "cinemagraph effect with isolated movement", "seamless loop of minor motion element", "photo-level image with localized animation"],
+          "negative_signals": ["fully static image with no motion", "full video with all elements moving", "complex animation with multiple moving parts", "text-only graphic"]
+        },
+        {
+          "id": "12.9",
+          "name": "Motion Graphics / Animated",
+          "description": "Animated graphics with text, icons, transitions.",
+          "visual_signals": ["animated graphic elements and icons", "text animations and kinetic typography", "smooth digital transitions between scenes", "vector or graphic-style animated visuals", "professional motion design production"],
+          "negative_signals": ["static image or photograph", "live-action video only", "stop motion with physical objects", "hand-drawn illustration without animation"]
+        },
+        {
+          "id": "12.10",
+          "name": "Boomerang",
+          "description": "Clip looping forward-backward. Hypnotic repetition.",
+          "visual_signals": ["forward-backward looping motion", "short repetitive clip", "boomerang-style ping-pong effect", "single action repeated in reverse loop", "Instagram boomerang format indicators"],
+          "negative_signals": ["one-directional video playback", "static image", "long-form video content", "complex multi-scene editing"]
+        },
+        {
+          "id": "12.11",
+          "name": "Kinetic Text / Text Animation",
+          "description": "Animated text in sync with audio/narration.",
+          "visual_signals": ["text appearing word-by-word or letter-by-letter", "animated typography synchronized with audio", "dynamic text movement across screen", "text as the primary animated element", "words scaling, rotating, or transitioning"],
+          "negative_signals": ["static text on image", "no text animation visible", "graphic icons animated without text focus", "live-action footage without text overlay"]
+        },
+        {
+          "id": "12.12",
+          "name": "Timelapse",
+          "description": "Temporal acceleration of a process.",
+          "visual_signals": ["visibly accelerated time passage", "fast-forwarded process from start to finish", "timelapse progression of an activity", "speed indicators or time compression visible", "clouds, shadows, or activity moving rapidly"],
+          "negative_signals": ["real-time footage", "static before/after without time compression", "slow-motion footage", "standard-speed demonstration"]
+        },
+        {
+          "id": "12.13",
+          "name": "Transition / Editing-Driven",
+          "description": "Video based on creative transitions (outfit change, reveal).",
+          "visual_signals": ["creative transition effects between scenes", "outfit change or transformation via editing cut", "smooth or matched transition between shots", "reveal moment through editing technique", "transition as the main creative device"],
+          "negative_signals": ["standard cuts without creative transitions", "static image", "continuous single-take footage", "text-only content"]
+        },
+        {
+          "id": "12.14",
+          "name": "Montage / Compilation",
+          "description": "Fast sequence of different clips. Dynamic, high impact.",
+          "visual_signals": ["rapid sequence of multiple different clips", "fast-paced editing with quick cuts", "variety of scenes compiled together", "dynamic rhythm and energy", "high visual impact through rapid transitions"],
+          "negative_signals": ["single continuous shot", "slow-paced content", "static image or graphic", "one scene without cuts"]
+        },
+        {
+          "id": "12.15",
+          "name": "Satisfying / Oddly Satisfying",
+          "description": "Repetitive movements, textures, colors that generate visual satisfaction.",
+          "visual_signals": ["repetitive or rhythmic visual movements", "satisfying texture or material interaction", "smooth or perfectly aligned actions", "visually pleasing symmetry or patterns", "calming or hypnotic visual repetition"],
+          "negative_signals": ["chaotic or jarring visuals", "fast-paced narrative content", "text-heavy informational layout", "talking head or interview format"]
+        },
+        {
+          "id": "12.16",
+          "name": "Notepad / Handwritten",
+          "description": "Handwritten text, blackboard, notepad. Simulates \"unproduced\" content.",
+          "visual_signals": ["handwritten text on paper or notepad", "blackboard or whiteboard with hand-drawn content", "pen or marker writing visible", "notebook or journal page format", "authentic hand-lettering aesthetic"],
+          "negative_signals": ["typed or digital font text", "professional graphic design", "no handwritten elements", "polished brand typography"]
+        },
+        {
+          "id": "12.17",
+          "name": "Infographic Pin",
+          "description": "Vertical image with data visualized graphically. High save rate.",
+          "visual_signals": ["tall vertical image format", "data visualization in pin-friendly format", "Pinterest-optimized aspect ratio", "graphically presented information", "save-worthy educational visual layout"],
+          "negative_signals": ["square or horizontal format", "no data or informational content", "video format", "text-only without visual data presentation"]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Interactive & Immersive",
+      "format_count": 6,
+      "formats": [
+        {
+          "id": "13.1",
+          "name": "Poll / Quiz Ad",
+          "description": "Interactive survey or quiz in the ad. [ONLY if UI elements visible]",
+          "visual_signals": ["poll or quiz UI elements visible", "multiple choice options displayed", "interactive voting buttons or sliders", "question with selectable answer options", "engagement prompt with tap/click indicators"],
+          "negative_signals": ["no interactive UI elements", "static image without poll/quiz", "text-only question without interactive options", "standard product image"]
+        },
+        {
+          "id": "13.2",
+          "name": "AR Try-On / Virtual Preview",
+          "description": "Virtual try-on of the product. [ONLY if AR overlay visible]",
+          "visual_signals": ["AR overlay on real camera feed", "virtual product placed on face or body", "augmented reality UI indicators", "try-on interface with product selection", "real-time AR rendering visible"],
+          "negative_signals": ["no AR overlay visible", "standard photo of person wearing product", "product mockup without AR technology", "static image without virtual try-on UI"]
+        },
+        {
+          "id": "13.3",
+          "name": "Shoppable Video",
+          "description": "Video with clickable products. [ONLY if product tags/UI visible]",
+          "visual_signals": ["product tags or labels overlaid on video", "clickable product hotspots visible", "shopping cart or buy-now UI elements", "tap-to-shop indicators on products", "e-commerce overlay on video content"],
+          "negative_signals": ["no shopping UI or product tags", "standard video without clickable elements", "static product image", "link-in-bio only without in-video shopping"]
+        },
+        {
+          "id": "13.4",
+          "name": "Playable Ad",
+          "description": "Mini interactive playable experience. [ONLY if game UI visible]",
+          "visual_signals": ["game-like interface with interactive controls", "play button or game start screen", "interactive mini-game elements visible", "score or progress indicators", "tap or swipe gameplay UI elements"],
+          "negative_signals": ["no game UI or interactive elements", "standard video ad", "static image without playable elements", "gamification text without actual game interface"]
+        },
+        {
+          "id": "13.5",
+          "name": "360-Degree / Panoramic",
+          "description": "Explorable content with visual rotation. [ONLY if navigation UI visible]",
+          "visual_signals": ["360-degree navigation controls visible", "panoramic view indicators", "drag-to-explore UI elements", "spherical or cylindrical image projection", "rotation arrows or compass navigation"],
+          "negative_signals": ["standard fixed-angle photograph", "no navigation or rotation UI", "multi-angle carousel without 360 control", "video without interactive rotation"]
+        },
+        {
+          "id": "13.6",
+          "name": "Gamified Ad",
+          "description": "Game elements (challenges, scores, rewards). [ONLY if game mechanics visible]",
+          "visual_signals": ["score counter or points display", "reward or achievement badges in ad", "progress bar or level indicators", "goal completion mechanics visible", "game-style visual feedback elements"],
+          "negative_signals": ["no game mechanics or scoring visible", "standard promotional ad", "educational content without gamification", "simple interactive poll without game elements"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs e dati di runtime
+*.log
+*.jsonl
+data/new_type_alerts_log.jsonl
+data/.alert_counter
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
+
+# Distribution
+*.tar.gz
+*.whl
