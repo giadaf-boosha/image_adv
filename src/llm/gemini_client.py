@@ -27,7 +27,7 @@ _RETRYABLE_GOOGLE_EXCEPTIONS = (
     google_exceptions.DeadlineExceeded,    # timeout
 )
 
-_DEFAULT_MODEL = "gemini-2.5-flash"
+_DEFAULT_MODEL = "gemini-3.1-flash-image-preview"
 _MAX_RETRIES = 3
 _BACKOFF_BASE_SECONDS = 2.0
 

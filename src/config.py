@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     # LLM primario (Google Gemini)
     google_api_key: str = ""
-    primary_model: str = "gemini-2.5-flash"
+    primary_model: str = "gemini-3.1-flash-image-preview"
 
     # LLM fallback (OpenAI)
     openai_api_key: str = ""
